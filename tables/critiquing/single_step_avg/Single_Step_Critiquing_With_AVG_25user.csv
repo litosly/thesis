@@ -1,0 +1,817 @@
+,user_id,target_item,item_name,pre_rank,top_prediction_item_name,critiqued_keyphrase,keyphrase_name,post_rank,num_existing_keyphrases
+0,350,405,b'Sushi Ocean',97,b'The Alternative Cafe',39,ramen,98,56
+1,350,405,b'Sushi Ocean',97,b'The Alternative Cafe',121,dumpling,328,56
+2,350,405,b'Sushi Ocean',97,b'The Alternative Cafe',141,washroom,223,56
+3,350,405,b'Sushi Ocean',97,b'The Alternative Cafe',145,markham,792,56
+4,350,405,b'Sushi Ocean',97,b'The Alternative Cafe',47,coffee,199,56
+5,350,1521,b'Dragon Boat Fusion Cuisine',3455,b'The Alternative Cafe',68,banana,2008,4
+6,350,1521,b'Dragon Boat Fusion Cuisine',3455,b'The Alternative Cafe',161,cheaper,3786,4
+7,350,1521,b'Dragon Boat Fusion Cuisine',3455,b'The Alternative Cafe',202,steamed,1780,4
+8,350,1604,"b""Tim Horton's""",448,b'The Alternative Cafe',91,wrap,411,29
+9,350,1604,"b""Tim Horton's""",448,b'The Alternative Cafe',135,parking,1297,29
+10,350,1604,"b""Tim Horton's""",448,b'The Alternative Cafe',234,accept debit,98,29
+11,350,1604,"b""Tim Horton's""",448,b'The Alternative Cafe',145,markham,3515,29
+12,350,1604,"b""Tim Horton's""",448,b'The Alternative Cafe',13,vietnamese,68,29
+13,350,3590,b'Greenspan Stuart Dr Chirprctr',6166,b'The Alternative Cafe',166,spacious,543,44
+14,350,3590,b'Greenspan Stuart Dr Chirprctr',6166,b'The Alternative Cafe',95,corn,2131,44
+15,350,3590,b'Greenspan Stuart Dr Chirprctr',6166,b'The Alternative Cafe',146,plaza,84,44
+16,350,3590,b'Greenspan Stuart Dr Chirprctr',6166,b'The Alternative Cafe',23,asian,6573,44
+17,350,3590,b'Greenspan Stuart Dr Chirprctr',6166,b'The Alternative Cafe',107,pancake,642,44
+18,350,4028,b'123 Limo',1462,b'The Alternative Cafe',23,asian,6163,29
+19,350,4028,b'123 Limo',1462,b'The Alternative Cafe',43,cake,679,29
+20,350,4028,b'123 Limo',1462,b'The Alternative Cafe',136,store,1516,29
+21,350,4028,b'123 Limo',1462,b'The Alternative Cafe',86,sesame,1601,29
+22,350,4028,b'123 Limo',1462,b'The Alternative Cafe',158,bright,6241,29
+23,350,5235,b'Yak Communications',5036,b'The Alternative Cafe',65,espresso,2532,6
+24,350,5235,b'Yak Communications',5036,b'The Alternative Cafe',202,steamed,6874,6
+25,350,5235,b'Yak Communications',5036,b'The Alternative Cafe',141,washroom,6970,6
+26,350,5235,b'Yak Communications',5036,b'The Alternative Cafe',157,greeted,1064,6
+27,350,5235,b'Yak Communications',5036,b'The Alternative Cafe',82,booth,5003,6
+28,350,7209,b'KellySpa',847,b'The Alternative Cafe',127,fried chicken,450,47
+29,350,7209,b'KellySpa',847,b'The Alternative Cafe',43,cake,1019,47
+30,350,7209,b'KellySpa',847,b'The Alternative Cafe',141,washroom,999,47
+31,350,7209,b'KellySpa',847,b'The Alternative Cafe',196,rare,5496,47
+32,350,7209,b'KellySpa',847,b'The Alternative Cafe',37,bread,247,47
+33,351,711,b'Pizza Land',394,b'Sweetgrass Spa',158,bright,436,27
+34,351,711,b'Pizza Land',394,b'Sweetgrass Spa',28,japanese,717,27
+35,351,711,b'Pizza Land',394,b'Sweetgrass Spa',216,baked,89,27
+36,351,711,b'Pizza Land',394,b'Sweetgrass Spa',65,espresso,550,27
+37,351,711,b'Pizza Land',394,b'Sweetgrass Spa',202,steamed,734,27
+38,351,1889,b'Maezo - Modern Indian Cuisine',3941,b'Sweetgrass Spa',44,sushi,4004,3
+39,351,1889,b'Maezo - Modern Indian Cuisine',3941,b'Sweetgrass Spa',23,asian,1270,3
+40,351,2063,b'Canada College of Education',3830,b'Sweetgrass Spa',196,rare,2132,3
+41,351,2063,b'Canada College of Education',3830,b'Sweetgrass Spa',13,vietnamese,3761,3
+42,351,2188,b'Canada College of Education',75,b'Sweetgrass Spa',63,donut,249,79
+43,351,2188,b'Canada College of Education',75,b'Sweetgrass Spa',111,lamb,52,79
+44,351,2188,b'Canada College of Education',75,b'Sweetgrass Spa',85,patty,607,79
+45,351,2188,b'Canada College of Education',75,b'Sweetgrass Spa',61,tempura,167,79
+46,351,2188,b'Canada College of Education',75,b'Sweetgrass Spa',43,cake,126,79
+47,351,2747,b'Fuzz Wax Bar',901,b'Sweetgrass Spa',40,pizza,1782,26
+48,351,2747,b'Fuzz Wax Bar',901,b'Sweetgrass Spa',171,fancy,1681,26
+49,351,2747,b'Fuzz Wax Bar',901,b'Sweetgrass Spa',91,wrap,943,26
+50,351,2747,b'Fuzz Wax Bar',901,b'Sweetgrass Spa',59,ice cream,1275,26
+51,351,2747,b'Fuzz Wax Bar',901,b'Sweetgrass Spa',43,cake,2978,26
+52,351,3217,b'United Smiles Of Kensington',673,b'Sweetgrass Spa',114,tomato,1077,23
+53,351,3217,b'United Smiles Of Kensington',673,b'Sweetgrass Spa',49,cheese,281,23
+54,351,3217,b'United Smiles Of Kensington',673,b'Sweetgrass Spa',167,pleasant,1179,23
+55,351,3217,b'United Smiles Of Kensington',673,b'Sweetgrass Spa',171,fancy,776,23
+56,351,3217,b'United Smiles Of Kensington',673,b'Sweetgrass Spa',116,wine,6479,23
+57,351,3347,b'Pantheon Restaurant',51,b'Sweetgrass Spa',71,cone,20,57
+58,351,3347,b'Pantheon Restaurant',51,b'Sweetgrass Spa',116,wine,275,57
+59,351,3347,b'Pantheon Restaurant',51,b'Sweetgrass Spa',190,smooth,16,57
+60,351,3347,b'Pantheon Restaurant',51,b'Sweetgrass Spa',202,steamed,21,57
+61,351,3347,b'Pantheon Restaurant',51,b'Sweetgrass Spa',81,juice,15,57
+62,351,3474,b'King Palace',95,b'Sweetgrass Spa',61,tempura,1355,46
+63,351,3474,b'King Palace',95,b'Sweetgrass Spa',231,grand opening,57,46
+64,351,3474,b'King Palace',95,b'Sweetgrass Spa',171,fancy,492,46
+65,351,3474,b'King Palace',95,b'Sweetgrass Spa',60,squid,172,46
+66,351,3474,b'King Palace',95,b'Sweetgrass Spa',137,shopping,1859,46
+67,351,4037,"b'Alan G Tanaka, DDS'",149,b'Sweetgrass Spa',116,wine,989,54
+68,351,4037,"b'Alan G Tanaka, DDS'",149,b'Sweetgrass Spa',37,bread,6253,54
+69,351,4037,"b'Alan G Tanaka, DDS'",149,b'Sweetgrass Spa',76,lettuce,106,54
+70,351,4037,"b'Alan G Tanaka, DDS'",149,b'Sweetgrass Spa',123,steak,6141,54
+71,351,4037,"b'Alan G Tanaka, DDS'",149,b'Sweetgrass Spa',95,corn,14,54
+72,351,4141,b'00 Gelato',13,b'Sweetgrass Spa',114,tomato,126,60
+73,351,4141,b'00 Gelato',13,b'Sweetgrass Spa',103,fruit,42,60
+74,351,4141,b'00 Gelato',13,b'Sweetgrass Spa',42,sandwich,112,60
+75,351,4141,b'00 Gelato',13,b'Sweetgrass Spa',17,pub,50,60
+76,351,4141,b'00 Gelato',13,b'Sweetgrass Spa',32,taco,10,60
+77,351,4903,b'SJ Nails & Spa',332,b'Sweetgrass Spa',176,tax,824,22
+78,351,4903,b'SJ Nails & Spa',332,b'Sweetgrass Spa',138,nail,6730,22
+79,351,4903,b'SJ Nails & Spa',332,b'Sweetgrass Spa',23,asian,356,22
+80,351,4903,b'SJ Nails & Spa',332,b'Sweetgrass Spa',155,refill,107,22
+81,351,4903,b'SJ Nails & Spa',332,b'Sweetgrass Spa',91,wrap,393,22
+82,352,591,b'SJ Nails & Spa',795,b'Sweetgrass Spa',61,tempura,50,45
+83,352,591,b'SJ Nails & Spa',795,b'Sweetgrass Spa',211,seasoned,147,45
+84,352,591,b'SJ Nails & Spa',795,b'Sweetgrass Spa',225,financial district,83,45
+85,352,591,b'SJ Nails & Spa',795,b'Sweetgrass Spa',82,booth,1168,45
+86,352,591,b'SJ Nails & Spa',795,b'Sweetgrass Spa',75,miso,449,45
+87,352,704,b'Agincourt District Library',327,b'Sweetgrass Spa',155,refill,1551,39
+88,352,704,b'Agincourt District Library',327,b'Sweetgrass Spa',102,cheesecake,1344,39
+89,352,704,b'Agincourt District Library',327,b'Sweetgrass Spa',103,fruit,103,39
+90,352,704,b'Agincourt District Library',327,b'Sweetgrass Spa',141,washroom,2251,39
+91,352,704,b'Agincourt District Library',327,b'Sweetgrass Spa',157,greeted,627,39
+92,352,903,b'Tim Hortons',180,b'Sweetgrass Spa',48,burger,664,40
+93,352,903,b'Tim Hortons',180,b'Sweetgrass Spa',123,steak,120,40
+94,352,903,b'Tim Hortons',180,b'Sweetgrass Spa',68,banana,174,40
+95,352,903,b'Tim Hortons',180,b'Sweetgrass Spa',23,asian,454,40
+96,352,903,b'Tim Hortons',180,b'Sweetgrass Spa',200,crust,97,40
+97,352,1120,b'Old Firehall Confectionery',4209,b'Sweetgrass Spa',49,cheese,3504,21
+98,352,1120,b'Old Firehall Confectionery',4209,b'Sweetgrass Spa',102,cheesecake,4088,21
+99,352,1120,b'Old Firehall Confectionery',4209,b'Sweetgrass Spa',38,chocolate,1950,21
+100,352,1120,b'Old Firehall Confectionery',4209,b'Sweetgrass Spa',216,baked,1048,21
+101,352,1120,b'Old Firehall Confectionery',4209,b'Sweetgrass Spa',103,fruit,1874,21
+102,352,1228,b'Nguyen Huong Foods Company',4110,b'Sweetgrass Spa',44,sushi,459,25
+103,352,1228,b'Nguyen Huong Foods Company',4110,b'Sweetgrass Spa',211,seasoned,3059,25
+104,352,1228,b'Nguyen Huong Foods Company',4110,b'Sweetgrass Spa',27,bbq,231,25
+105,352,1228,b'Nguyen Huong Foods Company',4110,b'Sweetgrass Spa',160,overpriced,2027,25
+106,352,1228,b'Nguyen Huong Foods Company',4110,b'Sweetgrass Spa',136,store,3768,25
+107,352,1999,b'Poke Guys',244,b'Sweetgrass Spa',170,disappointing,472,38
+108,352,1999,b'Poke Guys',244,b'Sweetgrass Spa',37,bread,670,38
+109,352,1999,b'Poke Guys',244,b'Sweetgrass Spa',116,wine,216,38
+110,352,1999,b'Poke Guys',244,b'Sweetgrass Spa',167,pleasant,159,38
+111,352,1999,b'Poke Guys',244,b'Sweetgrass Spa',115,lobster,1586,38
+112,352,2624,b'Galaxy Salon',820,b'Sweetgrass Spa',102,cheesecake,1625,27
+113,352,2624,b'Galaxy Salon',820,b'Sweetgrass Spa',18,bakery,2079,27
+114,352,2624,b'Galaxy Salon',820,b'Sweetgrass Spa',43,cake,886,27
+115,352,2624,b'Galaxy Salon',820,b'Sweetgrass Spa',156,soggy,1339,27
+116,352,2624,b'Galaxy Salon',820,b'Sweetgrass Spa',141,washroom,687,27
+117,352,3474,b'King Palace',869,b'Sweetgrass Spa',60,squid,783,46
+118,352,3474,b'King Palace',869,b'Sweetgrass Spa',196,rare,6675,46
+119,352,3474,b'King Palace',869,b'Sweetgrass Spa',114,tomato,6659,46
+120,352,3474,b'King Palace',869,b'Sweetgrass Spa',142,window,628,46
+121,352,3474,b'King Palace',869,b'Sweetgrass Spa',124,salmon,6556,46
+122,352,4247,b'Picko Lime',7253,b'Sweetgrass Spa',32,taco,6154,23
+123,352,4247,b'Picko Lime',7253,b'Sweetgrass Spa',160,overpriced,1900,23
+124,352,4247,b'Picko Lime',7253,b'Sweetgrass Spa',176,tax,665,23
+125,352,4247,b'Picko Lime',7253,b'Sweetgrass Spa',158,bright,1583,23
+126,352,4247,b'Picko Lime',7253,b'Sweetgrass Spa',200,crust,234,23
+127,352,4443,b'Ming Cuisine',10,b'Sweetgrass Spa',195,healthy,2,58
+128,352,4443,b'Ming Cuisine',10,b'Sweetgrass Spa',171,fancy,44,58
+129,352,4443,b'Ming Cuisine',10,b'Sweetgrass Spa',28,japanese,32,58
+130,352,4443,b'Ming Cuisine',10,b'Sweetgrass Spa',155,refill,474,58
+131,352,4443,b'Ming Cuisine',10,b'Sweetgrass Spa',91,wrap,40,58
+132,352,4932,"b""Eva's Original Chimneys""",298,b'Sweetgrass Spa',123,steak,208,58
+133,352,4932,"b""Eva's Original Chimneys""",298,b'Sweetgrass Spa',121,dumpling,93,58
+134,352,4932,"b""Eva's Original Chimneys""",298,b'Sweetgrass Spa',111,lamb,176,58
+135,352,4932,"b""Eva's Original Chimneys""",298,b'Sweetgrass Spa',142,window,160,58
+136,352,4932,"b""Eva's Original Chimneys""",298,b'Sweetgrass Spa',193,mayo,348,58
+137,353,36,b'Godspeed Brewery',185,b'Ming Cuisine',73,congee,895,53
+138,353,36,b'Godspeed Brewery',185,b'Ming Cuisine',49,cheese,380,53
+139,353,36,b'Godspeed Brewery',185,b'Ming Cuisine',116,wine,122,53
+140,353,36,b'Godspeed Brewery',185,b'Ming Cuisine',107,pancake,1191,53
+141,353,36,b'Godspeed Brewery',185,b'Ming Cuisine',195,healthy,348,53
+142,353,182,b'Toronto Hemp Company',2621,b'Ming Cuisine',47,coffee,3647,15
+143,353,182,b'Toronto Hemp Company',2621,b'Ming Cuisine',196,rare,3166,15
+144,353,182,b'Toronto Hemp Company',2621,b'Ming Cuisine',91,wrap,3206,15
+145,353,182,b'Toronto Hemp Company',2621,b'Ming Cuisine',123,steak,1261,15
+146,353,182,b'Toronto Hemp Company',2621,b'Ming Cuisine',145,markham,2767,15
+147,353,416,b'Paramount Middle Eastern Kitchen',559,b'Ming Cuisine',49,cheese,1205,21
+148,353,416,b'Paramount Middle Eastern Kitchen',559,b'Ming Cuisine',111,lamb,324,21
+149,353,416,b'Paramount Middle Eastern Kitchen',559,b'Ming Cuisine',18,bakery,212,21
+150,353,416,b'Paramount Middle Eastern Kitchen',559,b'Ming Cuisine',97,toast,1495,21
+151,353,416,b'Paramount Middle Eastern Kitchen',559,b'Ming Cuisine',19,indian,172,21
+152,353,547,b'Instant Notary',2531,b'Ming Cuisine',160,overpriced,1459,20
+153,353,547,b'Instant Notary',2531,b'Ming Cuisine',28,japanese,2948,20
+154,353,547,b'Instant Notary',2531,b'Ming Cuisine',211,seasoned,2946,20
+155,353,547,b'Instant Notary',2531,b'Ming Cuisine',95,corn,2884,20
+156,353,547,b'Instant Notary',2531,b'Ming Cuisine',70,honey,1588,20
+157,353,1468,b'Long & McQuade',486,b'Ming Cuisine',171,fancy,4232,31
+158,353,1468,b'Long & McQuade',486,b'Ming Cuisine',176,tax,486,31
+159,353,1468,b'Long & McQuade',486,b'Ming Cuisine',196,rare,1208,31
+160,353,1468,b'Long & McQuade',486,b'Ming Cuisine',167,pleasant,2104,31
+161,353,1468,b'Long & McQuade',486,b'Ming Cuisine',136,store,1002,31
+162,353,1584,b'Sunset Grill',18,b'Ming Cuisine',231,grand opening,59,62
+163,353,1584,b'Sunset Grill',18,b'Ming Cuisine',43,cake,156,62
+164,353,1584,b'Sunset Grill',18,b'Ming Cuisine',161,cheaper,448,62
+165,353,1584,b'Sunset Grill',18,b'Ming Cuisine',102,cheesecake,16,62
+166,353,1584,b'Sunset Grill',18,b'Ming Cuisine',167,pleasant,163,62
+167,353,1876,b'Beech Nursery',783,b'Ming Cuisine',79,apple,4281,36
+168,353,1876,b'Beech Nursery',783,b'Ming Cuisine',158,bright,146,36
+169,353,1876,b'Beech Nursery',783,b'Ming Cuisine',195,healthy,1514,36
+170,353,1876,b'Beech Nursery',783,b'Ming Cuisine',190,smooth,993,36
+171,353,1876,b'Beech Nursery',783,b'Ming Cuisine',81,juice,1834,36
+172,353,2261,b'The Burgernator',2133,b'Ming Cuisine',145,markham,2667,11
+173,353,2261,b'The Burgernator',2133,b'Ming Cuisine',111,lamb,1844,11
+174,353,2261,b'The Burgernator',2133,b'Ming Cuisine',103,fruit,2358,11
+175,353,2261,b'The Burgernator',2133,b'Ming Cuisine',14,buffet,403,11
+176,353,2261,b'The Burgernator',2133,b'Ming Cuisine',59,ice cream,1517,11
+177,353,2300,b'The Danish Pastry House',3055,b'Ming Cuisine',176,tax,2688,10
+178,353,2300,b'The Danish Pastry House',3055,b'Ming Cuisine',68,banana,2332,10
+179,353,2300,b'The Danish Pastry House',3055,b'Ming Cuisine',170,disappointing,2092,10
+180,353,2300,b'The Danish Pastry House',3055,b'Ming Cuisine',202,steamed,1181,10
+181,353,2300,b'The Danish Pastry House',3055,b'Ming Cuisine',171,fancy,1965,10
+182,353,2404,b'Tiger BBQ',983,b'Ming Cuisine',143,station,2903,18
+183,353,2404,b'Tiger BBQ',983,b'Ming Cuisine',191,frozen,1035,18
+184,353,2404,b'Tiger BBQ',983,b'Ming Cuisine',18,bakery,1581,18
+185,353,2404,b'Tiger BBQ',983,b'Ming Cuisine',38,chocolate,2610,18
+186,353,2404,b'Tiger BBQ',983,b'Ming Cuisine',156,soggy,1068,18
+187,353,2729,b'Little Tibet restaurant',213,b'Ming Cuisine',156,soggy,319,55
+188,353,2729,b'Little Tibet restaurant',213,b'Ming Cuisine',17,pub,362,55
+189,353,2729,b'Little Tibet restaurant',213,b'Ming Cuisine',37,bread,2148,55
+190,353,2729,b'Little Tibet restaurant',213,b'Ming Cuisine',97,toast,563,55
+191,353,2729,b'Little Tibet restaurant',213,b'Ming Cuisine',96,poutine,37,55
+192,354,1734,b'BQM Burger Shoppee',218,b'Osteo Tuina',38,chocolate,496,26
+193,354,1734,b'BQM Burger Shoppee',218,b'Osteo Tuina',78,strawberry,154,26
+194,354,1734,b'BQM Burger Shoppee',218,b'Osteo Tuina',129,green tea,147,26
+195,354,1734,b'BQM Burger Shoppee',218,b'Osteo Tuina',17,pub,775,26
+196,354,1734,b'BQM Burger Shoppee',218,b'Osteo Tuina',156,soggy,432,26
+197,354,2231,b'Seara Bakery & Pastry',152,b'Osteo Tuina',43,cake,229,34
+198,354,2231,b'Seara Bakery & Pastry',152,b'Osteo Tuina',146,plaza,289,34
+199,354,2231,b'Seara Bakery & Pastry',152,b'Osteo Tuina',167,pleasant,635,34
+200,354,2231,b'Seara Bakery & Pastry',152,b'Osteo Tuina',157,greeted,438,34
+201,354,2231,b'Seara Bakery & Pastry',152,b'Osteo Tuina',127,fried chicken,745,34
+202,354,4124,b'Lust For Lashes',128,b'Osteo Tuina',158,bright,204,46
+203,354,4124,b'Lust For Lashes',128,b'Osteo Tuina',102,cheesecake,672,46
+204,354,4124,b'Lust For Lashes',128,b'Osteo Tuina',192,sweetness,194,46
+205,354,4124,b'Lust For Lashes',128,b'Osteo Tuina',202,steamed,264,46
+206,354,4124,b'Lust For Lashes',128,b'Osteo Tuina',103,fruit,242,46
+207,354,4583,b'Fabric by Designers',7419,b'Osteo Tuina',216,baked,7428,23
+208,354,4583,b'Fabric by Designers',7419,b'Osteo Tuina',160,overpriced,471,23
+209,354,4583,b'Fabric by Designers',7419,b'Osteo Tuina',202,steamed,484,23
+210,354,4583,b'Fabric by Designers',7419,b'Osteo Tuina',113,bacon,251,23
+211,354,4583,b'Fabric by Designers',7419,b'Osteo Tuina',23,asian,7428,23
+212,354,4590,b'Lau Sun Mou Tea',61,b'Osteo Tuina',28,japanese,283,45
+213,354,4590,b'Lau Sun Mou Tea',61,b'Osteo Tuina',160,overpriced,211,45
+214,354,4590,b'Lau Sun Mou Tea',61,b'Osteo Tuina',222,gong cha,75,45
+215,354,4590,b'Lau Sun Mou Tea',61,b'Osteo Tuina',43,cake,94,45
+216,354,4590,b'Lau Sun Mou Tea',61,b'Osteo Tuina',59,ice cream,270,45
+217,354,5541,b'Salon Tocci',980,b'Osteo Tuina',171,fancy,4845,7
+218,354,5541,b'Salon Tocci',980,b'Osteo Tuina',146,plaza,502,7
+219,354,5541,b'Salon Tocci',980,b'Osteo Tuina',176,tax,829,7
+220,354,5541,b'Salon Tocci',980,b'Osteo Tuina',136,store,5231,7
+221,354,5541,b'Salon Tocci',980,b'Osteo Tuina',96,poutine,815,7
+222,354,6468,b'Bar B Q Tonite',821,b'Osteo Tuina',124,salmon,1853,35
+223,354,6468,b'Bar B Q Tonite',821,b'Osteo Tuina',23,asian,239,35
+224,354,6468,b'Bar B Q Tonite',821,b'Osteo Tuina',86,sesame,420,35
+225,354,6468,b'Bar B Q Tonite',821,b'Osteo Tuina',170,disappointing,5713,35
+226,354,6468,b'Bar B Q Tonite',821,b'Osteo Tuina',134,pork bone soup,34,35
+227,354,7015,b'Potluck Restaurant',290,b'Osteo Tuina',115,lobster,549,9
+228,354,7015,b'Potluck Restaurant',290,b'Osteo Tuina',170,disappointing,317,9
+229,354,7015,b'Potluck Restaurant',290,b'Osteo Tuina',95,corn,389,9
+230,354,7015,b'Potluck Restaurant',290,b'Osteo Tuina',211,seasoned,1149,9
+231,354,7015,b'Potluck Restaurant',290,b'Osteo Tuina',190,smooth,5425,9
+232,354,7161,b'Potluck Restaurant',490,b'Osteo Tuina',60,squid,681,32
+233,354,7161,b'Potluck Restaurant',490,b'Osteo Tuina',59,ice cream,1834,32
+234,354,7161,b'Potluck Restaurant',490,b'Osteo Tuina',157,greeted,2049,32
+235,354,7161,b'Potluck Restaurant',490,b'Osteo Tuina',135,parking,1319,32
+236,354,7161,b'Potluck Restaurant',490,b'Osteo Tuina',106,matcha,1424,32
+237,355,1992,b'Tabule Middle Eastern Cuisine',134,b'Fancy Nails',97,toast,279,27
+238,355,1992,b'Tabule Middle Eastern Cuisine',134,b'Fancy Nails',191,frozen,94,27
+239,355,1992,b'Tabule Middle Eastern Cuisine',134,b'Fancy Nails',103,fruit,120,27
+240,355,1992,b'Tabule Middle Eastern Cuisine',134,b'Fancy Nails',82,booth,219,27
+241,355,1992,b'Tabule Middle Eastern Cuisine',134,b'Fancy Nails',189,fluffy,378,27
+242,355,4082,b'North Beach Indoor Volleyball',20,b'Fancy Nails',146,plaza,11,35
+243,355,4082,b'North Beach Indoor Volleyball',20,b'Fancy Nails',70,honey,18,35
+244,355,4082,b'North Beach Indoor Volleyball',20,b'Fancy Nails',176,tax,67,35
+245,355,4082,b'North Beach Indoor Volleyball',20,b'Fancy Nails',207,stuffed,14,35
+246,355,4082,b'North Beach Indoor Volleyball',20,b'Fancy Nails',192,sweetness,28,35
+247,355,4192,b'Dimpflmeier Bakery',85,b'Fancy Nails',38,chocolate,582,34
+248,355,4192,b'Dimpflmeier Bakery',85,b'Fancy Nails',37,bread,248,34
+249,355,4192,b'Dimpflmeier Bakery',85,b'Fancy Nails',103,fruit,66,34
+250,355,4192,b'Dimpflmeier Bakery',85,b'Fancy Nails',142,window,371,34
+251,355,4192,b'Dimpflmeier Bakery',85,b'Fancy Nails',82,booth,104,34
+252,355,5363,"b""Boo Radley's Junction Bar and Grill""",25,b'Fancy Nails',142,window,23,83
+253,355,5363,"b""Boo Radley's Junction Bar and Grill""",25,b'Fancy Nails',124,salmon,47,83
+254,355,5363,"b""Boo Radley's Junction Bar and Grill""",25,b'Fancy Nails',135,parking,21,83
+255,355,5363,"b""Boo Radley's Junction Bar and Grill""",25,b'Fancy Nails',32,taco,24,83
+256,355,5363,"b""Boo Radley's Junction Bar and Grill""",25,b'Fancy Nails',195,healthy,28,83
+257,355,6627,b'Labl Couture',717,b'Fancy Nails',145,markham,166,32
+258,355,6627,b'Labl Couture',717,b'Fancy Nails',211,seasoned,648,32
+259,355,6627,b'Labl Couture',717,b'Fancy Nails',160,overpriced,836,32
+260,355,6627,b'Labl Couture',717,b'Fancy Nails',167,pleasant,1532,32
+261,355,6627,b'Labl Couture',717,b'Fancy Nails',44,sushi,539,32
+262,356,1089,b'Thai Noodle',472,b'Hot Docs Ted Rogers Cinema',70,honey,1859,17
+263,356,1089,b'Thai Noodle',472,b'Hot Docs Ted Rogers Cinema',176,tax,1895,17
+264,356,1089,b'Thai Noodle',472,b'Hot Docs Ted Rogers Cinema',140,movie,110,17
+265,356,1089,b'Thai Noodle',472,b'Hot Docs Ted Rogers Cinema',183,attentive,1941,17
+266,356,1089,b'Thai Noodle',472,b'Hot Docs Ted Rogers Cinema',157,greeted,347,17
+267,356,1939,b'Kimpo Vietnamese Restaurant',1845,b'Hot Docs Ted Rogers Cinema',30,seafood,1856,57
+268,356,1939,b'Kimpo Vietnamese Restaurant',1845,b'Hot Docs Ted Rogers Cinema',218,creamy,578,57
+269,356,1939,b'Kimpo Vietnamese Restaurant',1845,b'Hot Docs Ted Rogers Cinema',9,soup,2032,57
+270,356,1939,b'Kimpo Vietnamese Restaurant',1845,b'Hot Docs Ted Rogers Cinema',165,efficient,643,57
+271,356,1939,b'Kimpo Vietnamese Restaurant',1845,b'Hot Docs Ted Rogers Cinema',204,dip,678,57
+272,356,2077,b'Pet Styles Dog Grooming',2676,b'Hot Docs Ted Rogers Cinema',59,ice cream,2735,34
+273,356,2077,b'Pet Styles Dog Grooming',2676,b'Hot Docs Ted Rogers Cinema',91,wrap,4019,34
+274,356,2077,b'Pet Styles Dog Grooming',2676,b'Hot Docs Ted Rogers Cinema',82,booth,585,34
+275,356,2077,b'Pet Styles Dog Grooming',2676,b'Hot Docs Ted Rogers Cinema',72,scallop,2723,34
+276,356,2077,b'Pet Styles Dog Grooming',2676,b'Hot Docs Ted Rogers Cinema',41,beer,622,34
+277,356,2517,b'Run and gun',2091,b'Hot Docs Ted Rogers Cinema',175,helpful,306,17
+278,356,2517,b'Run and gun',2091,b'Hot Docs Ted Rogers Cinema',17,pub,1174,17
+279,356,2517,b'Run and gun',2091,b'Hot Docs Ted Rogers Cinema',111,lamb,3183,17
+280,356,2517,b'Run and gun',2091,b'Hot Docs Ted Rogers Cinema',163,dog,1651,17
+281,356,2517,b'Run and gun',2091,b'Hot Docs Ted Rogers Cinema',139,theatre,96,17
+282,356,2556,b'Forno Cultura',3096,b'Hot Docs Ted Rogers Cinema',20,classic,2521,52
+283,356,2556,b'Forno Cultura',3096,b'Hot Docs Ted Rogers Cinema',175,helpful,2269,52
+284,356,2556,b'Forno Cultura',3096,b'Hot Docs Ted Rogers Cinema',36,shrimp,1587,52
+285,356,2556,b'Forno Cultura',3096,b'Hot Docs Ted Rogers Cinema',15,takeout,2889,52
+286,356,2556,b'Forno Cultura',3096,b'Hot Docs Ted Rogers Cinema',186,traditional,1953,52
+287,356,3085,b'CoCo Fresh Tea & Juice Richmond Hill',2127,b'Hot Docs Ted Rogers Cinema',35,crispy,683,57
+288,356,3085,b'CoCo Fresh Tea & Juice Richmond Hill',2127,b'Hot Docs Ted Rogers Cinema',72,scallop,33,57
+289,356,3085,b'CoCo Fresh Tea & Juice Richmond Hill',2127,b'Hot Docs Ted Rogers Cinema',60,squid,277,57
+290,356,3085,b'CoCo Fresh Tea & Juice Richmond Hill',2127,b'Hot Docs Ted Rogers Cinema',54,noodle,249,57
+291,356,3085,b'CoCo Fresh Tea & Juice Richmond Hill',2127,b'Hot Docs Ted Rogers Cinema',107,pancake,50,57
+292,356,4358,b'Mindzai Flagship Store',97,b'Hot Docs Ted Rogers Cinema',20,classic,118,60
+293,356,4358,b'Mindzai Flagship Store',97,b'Hot Docs Ted Rogers Cinema',117,rib,254,60
+294,356,4358,b'Mindzai Flagship Store',97,b'Hot Docs Ted Rogers Cinema',55,meat,611,60
+295,356,4358,b'Mindzai Flagship Store',97,b'Hot Docs Ted Rogers Cinema',138,nail,49,60
+296,356,4358,b'Mindzai Flagship Store',97,b'Hot Docs Ted Rogers Cinema',228,balsamic vinegar,158,60
+297,356,6063,b'Baby On the Hip',4848,b'Hot Docs Ted Rogers Cinema',211,seasoned,1566,20
+298,356,6063,b'Baby On the Hip',4848,b'Hot Docs Ted Rogers Cinema',98,belly,4433,20
+299,356,6063,b'Baby On the Hip',4848,b'Hot Docs Ted Rogers Cinema',131,pork belly,4500,20
+300,356,6063,b'Baby On the Hip',4848,b'Hot Docs Ted Rogers Cinema',55,meat,4463,20
+301,356,6063,b'Baby On the Hip',4848,b'Hot Docs Ted Rogers Cinema',75,miso,4399,20
+302,357,137,b'Samko & Miko Toy Warehouse',906,b'Planta',33,curry,884,62
+303,357,137,b'Samko & Miko Toy Warehouse',906,b'Planta',183,attentive,332,62
+304,357,137,b'Samko & Miko Toy Warehouse',906,b'Planta',219,deep fried,281,62
+305,357,137,b'Samko & Miko Toy Warehouse',906,b'Planta',49,cheese,284,62
+306,357,137,b'Samko & Miko Toy Warehouse',906,b'Planta',207,stuffed,337,62
+307,357,1154,b'Greek Brothers',1724,b'Planta',56,chicken,2715,14
+308,357,1154,b'Greek Brothers',1724,b'Planta',130,bubble tea,2052,14
+309,357,1154,b'Greek Brothers',1724,b'Planta',23,asian,1258,14
+310,357,1154,b'Greek Brothers',1724,b'Planta',139,theatre,4471,14
+311,357,1154,b'Greek Brothers',1724,b'Planta',49,cheese,4126,14
+312,357,1206,b'Gelato Gelato',1203,b'Planta',96,poutine,4089,7
+313,357,1206,b'Gelato Gelato',1203,b'Planta',21,modern,964,7
+314,357,1206,b'Gelato Gelato',1203,b'Planta',105,latte,1126,7
+315,357,1206,b'Gelato Gelato',1203,b'Planta',191,frozen,1283,7
+316,357,1206,b'Gelato Gelato',1203,b'Planta',146,plaza,1853,7
+317,357,2011,b'Gala Travels',2224,b'Planta',92,lemon,4057,48
+318,357,2011,b'Gala Travels',2224,b'Planta',183,attentive,2087,48
+319,357,2011,b'Gala Travels',2224,b'Planta',43,cake,650,48
+320,357,2011,b'Gala Travels',2224,b'Planta',56,chicken,557,48
+321,357,2011,b'Gala Travels',2224,b'Planta',83,calamari,1331,48
+322,357,2813,b'Matagali Restaurant',382,b'Planta',100,oyster,219,59
+323,357,2813,b'Matagali Restaurant',382,b'Planta',202,steamed,432,59
+324,357,2813,b'Matagali Restaurant',382,b'Planta',45,egg,501,59
+325,357,2813,b'Matagali Restaurant',382,b'Planta',197,refreshing,765,59
+326,357,2813,b'Matagali Restaurant',382,b'Planta',97,toast,172,59
+327,357,2881,"b""Wimpy's Diner""",24,b'Planta',52,beef,15,24
+328,357,2881,"b""Wimpy's Diner""",24,b'Planta',215,sour,265,24
+329,357,2881,"b""Wimpy's Diner""",24,b'Planta',146,plaza,280,24
+330,357,2881,"b""Wimpy's Diner""",24,b'Planta',21,modern,47,24
+331,357,2881,"b""Wimpy's Diner""",24,b'Planta',61,tempura,29,24
+332,357,3374,b'Don Valley Volkswagen',140,b'Planta',207,stuffed,317,62
+333,357,3374,b'Don Valley Volkswagen',140,b'Planta',70,honey,176,62
+334,357,3374,b'Don Valley Volkswagen',140,b'Planta',109,tofu,100,62
+335,357,3374,b'Don Valley Volkswagen',140,b'Planta',126,milk,292,62
+336,357,3374,b'Don Valley Volkswagen',140,b'Planta',198,crunchy,199,62
+337,357,3838,b'GoodLife Fitness',116,b'Planta',203,greasy,6039,65
+338,357,3838,b'GoodLife Fitness',116,b'Planta',57,dim sum,574,65
+339,357,3838,b'GoodLife Fitness',116,b'Planta',2,thai,518,65
+340,357,3838,b'GoodLife Fitness',116,b'Planta',51,pork,82,65
+341,357,3838,b'GoodLife Fitness',116,b'Planta',136,store,1482,65
+342,357,4699,b'Nana',2904,b'Planta',21,modern,1013,4
+343,357,4699,b'Nana',2904,b'Planta',146,plaza,7327,4
+344,357,4699,b'Nana',2904,b'Planta',20,classic,2143,4
+345,357,4828,b'LCBO',44,b'Planta',136,store,37,22
+346,357,4828,b'LCBO',44,b'Planta',132,spring roll,23,22
+347,357,4828,b'LCBO',44,b'Planta',103,fruit,84,22
+348,357,4828,b'LCBO',44,b'Planta',54,noodle,233,22
+349,357,4828,b'LCBO',44,b'Planta',203,greasy,156,22
+350,357,6199,b'McTamney James & Company',394,b'Planta',202,steamed,1019,27
+351,357,6199,b'McTamney James & Company',394,b'Planta',59,ice cream,630,27
+352,357,6199,b'McTamney James & Company',394,b'Planta',6,dessert,721,27
+353,357,6199,b'McTamney James & Company',394,b'Planta',43,cake,495,27
+354,357,6199,b'McTamney James & Company',394,b'Planta',114,tomato,378,27
+355,358,19,b'New Fashion Shop',8,b'Planta',59,ice cream,49,8
+356,358,19,b'New Fashion Shop',8,b'Planta',20,classic,147,8
+357,358,19,b'New Fashion Shop',8,b'Planta',29,breakfast,11,8
+358,358,19,b'New Fashion Shop',8,b'Planta',184,reasonable,105,8
+359,358,19,b'New Fashion Shop',8,b'Planta',225,financial district,108,8
+360,358,1058,b'Boom 97.3 FM',1864,b'Planta',105,latte,4161,52
+361,358,1058,b'Boom 97.3 FM',1864,b'Planta',31,brunch,1699,52
+362,358,1058,b'Boom 97.3 FM',1864,b'Planta',124,salmon,106,52
+363,358,1058,b'Boom 97.3 FM',1864,b'Planta',136,store,3776,52
+364,358,1058,b'Boom 97.3 FM',1864,b'Planta',172,comfortable,1309,52
+365,358,1340,b'Cibo Wine Bar',20,b'Planta',118,waffle,106,55
+366,358,1340,b'Cibo Wine Bar',20,b'Planta',107,pancake,50,55
+367,358,1340,b'Cibo Wine Bar',20,b'Planta',137,shopping,3,55
+368,358,1340,b'Cibo Wine Bar',20,b'Planta',92,lemon,5,55
+369,358,1340,b'Cibo Wine Bar',20,b'Planta',147,market,4,55
+370,358,1799,b'Timmie Doggie Outfitters',103,b'Planta',30,seafood,21,45
+371,358,1799,b'Timmie Doggie Outfitters',103,b'Planta',174,cozy,468,45
+372,358,1799,b'Timmie Doggie Outfitters',103,b'Planta',114,tomato,527,45
+373,358,1799,b'Timmie Doggie Outfitters',103,b'Planta',191,frozen,590,45
+374,358,1799,b'Timmie Doggie Outfitters',103,b'Planta',35,crispy,34,45
+375,358,2847,b'Copacabana Brazilian Steakhouse',29,b'Planta',205,gelato,13,51
+376,358,2847,b'Copacabana Brazilian Steakhouse',29,b'Planta',112,mango,63,51
+377,358,2847,b'Copacabana Brazilian Steakhouse',29,b'Planta',113,bacon,184,51
+378,358,2847,b'Copacabana Brazilian Steakhouse',29,b'Planta',128,milk tea,88,51
+379,358,2847,b'Copacabana Brazilian Steakhouse',29,b'Planta',103,fruit,52,51
+380,359,36,b'Godspeed Brewery',117,b'00 Gelato',103,fruit,388,53
+381,359,36,b'Godspeed Brewery',117,b'00 Gelato',76,lettuce,446,53
+382,359,36,b'Godspeed Brewery',117,b'00 Gelato',107,pancake,422,53
+383,359,36,b'Godspeed Brewery',117,b'00 Gelato',89,crepe,82,53
+384,359,36,b'Godspeed Brewery',117,b'00 Gelato',17,pub,1074,53
+385,359,1241,"b""Basa's Hot Dog World""",4056,b'00 Gelato',47,coffee,4464,46
+386,359,1241,"b""Basa's Hot Dog World""",4056,b'00 Gelato',143,station,3535,46
+387,359,1241,"b""Basa's Hot Dog World""",4056,b'00 Gelato',29,breakfast,4378,46
+388,359,1241,"b""Basa's Hot Dog World""",4056,b'00 Gelato',37,bread,4014,46
+389,359,1241,"b""Basa's Hot Dog World""",4056,b'00 Gelato',116,wine,3490,46
+390,359,2936,b'Dominion Pub and Kitchen',669,b'00 Gelato',189,fluffy,1807,23
+391,359,2936,b'Dominion Pub and Kitchen',669,b'00 Gelato',59,ice cream,871,23
+392,359,2936,b'Dominion Pub and Kitchen',669,b'00 Gelato',89,crepe,996,23
+393,359,2936,b'Dominion Pub and Kitchen',669,b'00 Gelato',23,asian,1216,23
+394,359,2936,b'Dominion Pub and Kitchen',669,b'00 Gelato',43,cake,735,23
+395,359,3343,b'Kitchen Stuff Plus',555,b'00 Gelato',160,overpriced,521,31
+396,359,3343,b'Kitchen Stuff Plus',555,b'00 Gelato',116,wine,570,31
+397,359,3343,b'Kitchen Stuff Plus',555,b'00 Gelato',44,sushi,400,31
+398,359,3343,b'Kitchen Stuff Plus',555,b'00 Gelato',216,baked,1524,31
+399,359,3343,b'Kitchen Stuff Plus',555,b'00 Gelato',66,octopus,111,31
+400,359,4180,b'Mourguet Jewellery',1964,b'00 Gelato',170,disappointing,1918,17
+401,359,4180,b'Mourguet Jewellery',1964,b'00 Gelato',30,seafood,1609,17
+402,359,4180,b'Mourguet Jewellery',1964,b'00 Gelato',189,fluffy,6121,17
+403,359,4180,b'Mourguet Jewellery',1964,b'00 Gelato',167,pleasant,6189,17
+404,359,4180,b'Mourguet Jewellery',1964,b'00 Gelato',43,cake,6094,17
+405,359,4831,b'Our Thai Restaurant & Cafe',367,b'00 Gelato',69,cookie,6851,39
+406,359,4831,b'Our Thai Restaurant & Cafe',367,b'00 Gelato',79,apple,6870,39
+407,359,4831,b'Our Thai Restaurant & Cafe',367,b'00 Gelato',157,greeted,1806,39
+408,359,4831,b'Our Thai Restaurant & Cafe',367,b'00 Gelato',192,sweetness,100,39
+409,359,4831,b'Our Thai Restaurant & Cafe',367,b'00 Gelato',216,baked,536,39
+410,359,5695,b'Atlas Medical Clinic',77,b'00 Gelato',82,booth,165,31
+411,359,5695,b'Atlas Medical Clinic',77,b'00 Gelato',167,pleasant,56,31
+412,359,5695,b'Atlas Medical Clinic',77,b'00 Gelato',113,bacon,48,31
+413,359,5695,b'Atlas Medical Clinic',77,b'00 Gelato',95,corn,28,31
+414,359,5695,b'Atlas Medical Clinic',77,b'00 Gelato',44,sushi,67,31
+415,359,7061,b'Fat Bastard Burrito',1096,b'00 Gelato',31,brunch,4187,21
+416,359,7061,b'Fat Bastard Burrito',1096,b'00 Gelato',158,bright,1696,21
+417,359,7061,b'Fat Bastard Burrito',1096,b'00 Gelato',111,lamb,5146,21
+418,359,7061,b'Fat Bastard Burrito',1096,b'00 Gelato',47,coffee,1470,21
+419,359,7061,b'Fat Bastard Burrito',1096,b'00 Gelato',69,cookie,5284,21
+420,359,7070,b'Whatta Pup!',1055,b'00 Gelato',103,fruit,1621,27
+421,359,7070,b'Whatta Pup!',1055,b'00 Gelato',23,asian,789,27
+422,359,7070,b'Whatta Pup!',1055,b'00 Gelato',135,parking,460,27
+423,359,7070,b'Whatta Pup!',1055,b'00 Gelato',49,cheese,460,27
+424,359,7070,b'Whatta Pup!',1055,b'00 Gelato',40,pizza,1169,27
+425,359,7313,b'Osteo Tuina',44,b'00 Gelato',39,ramen,7,55
+426,359,7313,b'Osteo Tuina',44,b'00 Gelato',160,overpriced,109,55
+427,359,7313,b'Osteo Tuina',44,b'00 Gelato',144,chair,130,55
+428,359,7313,b'Osteo Tuina',44,b'00 Gelato',135,parking,153,55
+429,359,7313,b'Osteo Tuina',44,b'00 Gelato',167,pleasant,25,55
+430,360,3219,b'Ikon Salon',1828,b'Golden Asian Cuisine',155,refill,1652,21
+431,360,3219,b'Ikon Salon',1828,b'Golden Asian Cuisine',146,plaza,738,21
+432,360,3219,b'Ikon Salon',1828,b'Golden Asian Cuisine',111,lamb,1943,21
+433,360,3219,b'Ikon Salon',1828,b'Golden Asian Cuisine',23,asian,6451,21
+434,360,3219,b'Ikon Salon',1828,b'Golden Asian Cuisine',188,flavorful,1239,21
+435,360,3478,b'Pita Land',6661,b'Golden Asian Cuisine',56,chicken,6671,21
+436,360,3478,b'Pita Land',6661,b'Golden Asian Cuisine',35,crispy,6610,21
+437,360,3478,b'Pita Land',6661,b'Golden Asian Cuisine',55,meat,6662,21
+438,360,3478,b'Pita Land',6661,b'Golden Asian Cuisine',54,noodle,6599,21
+439,360,3478,b'Pita Land',6661,b'Golden Asian Cuisine',133,fried rice,452,21
+440,360,3552,b'The Hole In the Wall',6496,b'Golden Asian Cuisine',45,egg,6500,7
+441,360,3552,b'The Hole In the Wall',6496,b'Golden Asian Cuisine',56,chicken,160,7
+442,360,3552,b'The Hole In the Wall',6496,b'Golden Asian Cuisine',35,crispy,1026,7
+443,360,3552,b'The Hole In the Wall',6496,b'Golden Asian Cuisine',4,fry,605,7
+444,360,3552,b'The Hole In the Wall',6496,b'Golden Asian Cuisine',217,juicy,6519,7
+445,360,3785,b'Bravi Ristorante',5942,b'Golden Asian Cuisine',192,sweetness,218,26
+446,360,3785,b'Bravi Ristorante',5942,b'Golden Asian Cuisine',116,wine,1882,26
+447,360,3785,b'Bravi Ristorante',5942,b'Golden Asian Cuisine',186,traditional,6063,26
+448,360,3785,b'Bravi Ristorante',5942,b'Golden Asian Cuisine',125,pasta,6051,26
+449,360,3785,b'Bravi Ristorante',5942,b'Golden Asian Cuisine',5,fried,5925,26
+450,360,6002,b'407 ETR',333,b'Golden Asian Cuisine',181,music,278,30
+451,360,6002,b'407 ETR',333,b'Golden Asian Cuisine',34,potato,501,30
+452,360,6002,b'407 ETR',333,b'Golden Asian Cuisine',122,bean,326,30
+453,360,6002,b'407 ETR',333,b'Golden Asian Cuisine',23,asian,202,30
+454,360,6002,b'407 ETR',333,b'Golden Asian Cuisine',65,espresso,1332,30
+455,360,6570,b'Elite Bakery',5579,b'Golden Asian Cuisine',203,greasy,5628,17
+456,360,6570,b'Elite Bakery',5579,b'Golden Asian Cuisine',22,french,1287,17
+457,360,6570,b'Elite Bakery',5579,b'Golden Asian Cuisine',155,refill,5484,17
+458,360,6570,b'Elite Bakery',5579,b'Golden Asian Cuisine',113,bacon,5971,17
+459,360,6570,b'Elite Bakery',5579,b'Golden Asian Cuisine',31,brunch,6362,17
+460,361,1783,b'Crepe Delicious',3710,b'Mucho Burrito',81,juice,3705,2
+461,361,2528,b'Pearl Harbourfront Chinese Cuisine',36,b'Mucho Burrito',156,soggy,28,38
+462,361,2528,b'Pearl Harbourfront Chinese Cuisine',36,b'Mucho Burrito',67,croissant,31,38
+463,361,2528,b'Pearl Harbourfront Chinese Cuisine',36,b'Mucho Burrito',205,gelato,113,38
+464,361,2528,b'Pearl Harbourfront Chinese Cuisine',36,b'Mucho Burrito',63,donut,51,38
+465,361,2528,b'Pearl Harbourfront Chinese Cuisine',36,b'Mucho Burrito',47,coffee,52,38
+466,361,2816,b'Mersey Heating and Air Conditioning',2606,b'Mucho Burrito',170,disappointing,1670,24
+467,361,2816,b'Mersey Heating and Air Conditioning',2606,b'Mucho Burrito',71,cone,1016,24
+468,361,2816,b'Mersey Heating and Air Conditioning',2606,b'Mucho Burrito',176,tax,1288,24
+469,361,2816,b'Mersey Heating and Air Conditioning',2606,b'Mucho Burrito',220,lactose intolerant,2585,24
+470,361,2816,b'Mersey Heating and Air Conditioning',2606,b'Mucho Burrito',136,store,585,24
+471,361,4210,b'Latin Taste',7197,b'Mucho Burrito',42,sandwich,7247,17
+472,361,4210,b'Latin Taste',7197,b'Mucho Burrito',216,baked,7195,17
+473,361,4210,b'Latin Taste',7197,b'Mucho Burrito',95,corn,6153,17
+474,361,4210,b'Latin Taste',7197,b'Mucho Burrito',82,booth,7212,17
+475,361,4210,b'Latin Taste',7197,b'Mucho Burrito',155,refill,6130,17
+476,361,5901,b'Rapp Optical',4529,b'Mucho Burrito',38,chocolate,1992,23
+477,361,5901,b'Rapp Optical',4529,b'Mucho Burrito',68,banana,4434,23
+478,361,5901,b'Rapp Optical',4529,b'Mucho Burrito',190,smooth,4429,23
+479,361,5901,b'Rapp Optical',4529,b'Mucho Burrito',113,bacon,1993,23
+480,361,5901,b'Rapp Optical',4529,b'Mucho Burrito',189,fluffy,4460,23
+481,361,6454,b'Golden Thai Restaurant',3,b'Mucho Burrito',196,rare,9,55
+482,361,6454,b'Golden Thai Restaurant',3,b'Mucho Burrito',171,fancy,2,55
+483,361,6454,b'Golden Thai Restaurant',3,b'Mucho Burrito',155,refill,14,55
+484,361,6454,b'Golden Thai Restaurant',3,b'Mucho Burrito',136,store,38,55
+485,361,6454,b'Golden Thai Restaurant',3,b'Mucho Burrito',166,spacious,1,55
+486,362,982,"b""Tim Horton's""",3064,b'The Old House',48,burger,3012,19
+487,362,982,"b""Tim Horton's""",3064,b'The Old House',158,bright,3091,19
+488,362,982,"b""Tim Horton's""",3064,b'The Old House',76,lettuce,3542,19
+489,362,982,"b""Tim Horton's""",3064,b'The Old House',121,dumpling,2044,19
+490,362,982,"b""Tim Horton's""",3064,b'The Old House',196,rare,3098,19
+491,362,1219,b'Golden Rosewater Beauty',352,b'The Old House',190,smooth,97,44
+492,362,1219,b'Golden Rosewater Beauty',352,b'The Old House',155,refill,326,44
+493,362,1219,b'Golden Rosewater Beauty',352,b'The Old House',89,crepe,867,44
+494,362,1219,b'Golden Rosewater Beauty',352,b'The Old House',60,squid,412,44
+495,362,1219,b'Golden Rosewater Beauty',352,b'The Old House',211,seasoned,266,44
+496,362,1303,b'102.1 FM TheEdge',1605,b'The Old House',176,tax,4283,31
+497,362,1303,b'102.1 FM TheEdge',1605,b'The Old House',108,duck,873,31
+498,362,1303,b'102.1 FM TheEdge',1605,b'The Old House',30,seafood,1331,31
+499,362,1303,b'102.1 FM TheEdge',1605,b'The Old House',192,sweetness,435,31
+500,362,1303,b'102.1 FM TheEdge',1605,b'The Old House',23,asian,1062,31
+501,362,2756,b'Toronto Centre for Advanced Skin Repair',662,b'The Old House',211,seasoned,1156,23
+502,362,2756,b'Toronto Centre for Advanced Skin Repair',662,b'The Old House',157,greeted,504,23
+503,362,2756,b'Toronto Centre for Advanced Skin Repair',662,b'The Old House',27,bbq,721,23
+504,362,2756,b'Toronto Centre for Advanced Skin Repair',662,b'The Old House',81,juice,1385,23
+505,362,2756,b'Toronto Centre for Advanced Skin Repair',662,b'The Old House',30,seafood,472,23
+506,362,3955,b'Wynn Fitness Clubs - Scarborough',21,b'The Old House',136,store,232,43
+507,362,3955,b'Wynn Fitness Clubs - Scarborough',21,b'The Old House',124,salmon,37,43
+508,362,3955,b'Wynn Fitness Clubs - Scarborough',21,b'The Old House',28,japanese,13,43
+509,362,3955,b'Wynn Fitness Clubs - Scarborough',21,b'The Old House',27,bbq,85,43
+510,362,3955,b'Wynn Fitness Clubs - Scarborough',21,b'The Old House',129,green tea,69,43
+511,362,4397,b'Yummy Yummy Dumplings',30,b'The Old House',202,steamed,7,44
+512,362,4397,b'Yummy Yummy Dumplings',30,b'The Old House',160,overpriced,122,44
+513,362,4397,b'Yummy Yummy Dumplings',30,b'The Old House',121,dumpling,20,44
+514,362,4397,b'Yummy Yummy Dumplings',30,b'The Old House',59,ice cream,75,44
+515,362,4397,b'Yummy Yummy Dumplings',30,b'The Old House',123,steak,39,44
+516,362,5008,b'Burrito Bandidos',10,b'The Old House',157,greeted,15,57
+517,362,5008,b'Burrito Bandidos',10,b'The Old House',127,fried chicken,25,57
+518,362,5008,b'Burrito Bandidos',10,b'The Old House',84,kimchi,5,57
+519,362,5008,b'Burrito Bandidos',10,b'The Old House',43,cake,6,57
+520,362,5008,b'Burrito Bandidos',10,b'The Old House',108,duck,13,57
+521,363,712,b'Dots Gift Boutique',150,b'00 Gelato',196,rare,85,19
+522,363,712,b'Dots Gift Boutique',150,b'00 Gelato',13,vietnamese,181,19
+523,363,712,b'Dots Gift Boutique',150,b'00 Gelato',76,lettuce,204,19
+524,363,712,b'Dots Gift Boutique',150,b'00 Gelato',190,smooth,1462,19
+525,363,712,b'Dots Gift Boutique',150,b'00 Gelato',99,bubble,1687,19
+526,363,2038,b'Mona Richie Bridal',87,b'00 Gelato',22,french,73,48
+527,363,2038,b'Mona Richie Bridal',87,b'00 Gelato',171,fancy,196,48
+528,363,2038,b'Mona Richie Bridal',87,b'00 Gelato',156,soggy,122,48
+529,363,2038,b'Mona Richie Bridal',87,b'00 Gelato',129,green tea,127,48
+530,363,2038,b'Mona Richie Bridal',87,b'00 Gelato',95,corn,531,48
+531,363,2552,b'L. A. Boil Seafood',91,b'00 Gelato',86,sesame,91,33
+532,363,2552,b'L. A. Boil Seafood',91,b'00 Gelato',190,smooth,494,33
+533,363,2552,b'L. A. Boil Seafood',91,b'00 Gelato',127,fried chicken,141,33
+534,363,2552,b'L. A. Boil Seafood',91,b'00 Gelato',200,crust,185,33
+535,363,2552,b'L. A. Boil Seafood',91,b'00 Gelato',170,disappointing,193,33
+536,363,2729,b'Little Tibet restaurant',166,b'00 Gelato',49,cheese,302,55
+537,363,2729,b'Little Tibet restaurant',166,b'00 Gelato',17,pub,231,55
+538,363,2729,b'Little Tibet restaurant',166,b'00 Gelato',205,gelato,414,55
+539,363,2729,b'Little Tibet restaurant',166,b'00 Gelato',157,greeted,1563,55
+540,363,2729,b'Little Tibet restaurant',166,b'00 Gelato',140,movie,25,55
+541,363,4421,b'Good Day Good Time Tea',389,b'00 Gelato',232,north york,30,26
+542,363,4421,b'Good Day Good Time Tea',389,b'00 Gelato',143,station,2028,26
+543,363,4421,b'Good Day Good Time Tea',389,b'00 Gelato',43,cake,879,26
+544,363,4421,b'Good Day Good Time Tea',389,b'00 Gelato',136,store,7427,26
+545,363,4421,b'Good Day Good Time Tea',389,b'00 Gelato',91,wrap,1533,26
+546,363,5694,"b'Rod, Gun & Barbers'",766,b'00 Gelato',136,store,5227,16
+547,363,5694,"b'Rod, Gun & Barbers'",766,b'00 Gelato',176,tax,1902,16
+548,363,5694,"b'Rod, Gun & Barbers'",766,b'00 Gelato',38,chocolate,5110,16
+549,363,5694,"b'Rod, Gun & Barbers'",766,b'00 Gelato',166,spacious,1707,16
+550,363,5694,"b'Rod, Gun & Barbers'",766,b'00 Gelato',97,toast,1528,16
+551,364,411,b'The Simple Kitchen',1495,b'00 Gelato',123,steak,1041,24
+552,364,411,b'The Simple Kitchen',1495,b'00 Gelato',91,wrap,3310,24
+553,364,411,b'The Simple Kitchen',1495,b'00 Gelato',31,brunch,562,24
+554,364,411,b'The Simple Kitchen',1495,b'00 Gelato',141,washroom,1118,24
+555,364,411,b'The Simple Kitchen',1495,b'00 Gelato',216,baked,3422,24
+556,364,1898,b'Lale Bakery & Caffe',49,b'00 Gelato',141,washroom,1184,48
+557,364,1898,b'Lale Bakery & Caffe',49,b'00 Gelato',95,corn,425,48
+558,364,1898,b'Lale Bakery & Caffe',49,b'00 Gelato',142,window,44,48
+559,364,1898,b'Lale Bakery & Caffe',49,b'00 Gelato',127,fried chicken,207,48
+560,364,1898,b'Lale Bakery & Caffe',49,b'00 Gelato',121,dumpling,402,48
+561,364,3174,b'Lale Bakery & Caffe',798,b'00 Gelato',95,corn,6403,10
+562,364,3174,b'Lale Bakery & Caffe',798,b'00 Gelato',225,financial district,494,10
+563,364,3174,b'Lale Bakery & Caffe',798,b'00 Gelato',65,espresso,1736,10
+564,364,3174,b'Lale Bakery & Caffe',798,b'00 Gelato',38,chocolate,183,10
+565,364,3174,b'Lale Bakery & Caffe',798,b'00 Gelato',116,wine,951,10
+566,364,3480,b'Karahi Point',1679,b'00 Gelato',40,pizza,1182,6
+567,364,3480,b'Karahi Point',1679,b'00 Gelato',47,coffee,1492,6
+568,364,3480,b'Karahi Point',1679,b'00 Gelato',42,sandwich,6665,6
+569,364,3480,b'Karahi Point',1679,b'00 Gelato',216,baked,6674,6
+570,364,3480,b'Karahi Point',1679,b'00 Gelato',69,cookie,1283,6
+571,364,3956,b'Pet Valu',6078,b'00 Gelato',64,olive,1064,48
+572,364,3956,b'Pet Valu',6078,b'00 Gelato',27,bbq,5922,48
+573,364,3956,b'Pet Valu',6078,b'00 Gelato',176,tax,1457,48
+574,364,3956,b'Pet Valu',6078,b'00 Gelato',124,salmon,602,48
+575,364,3956,b'Pet Valu',6078,b'00 Gelato',49,cheese,6221,48
+576,366,248,"b""Bud's Coffee Bar""",3470,"b""Sophie's Gown Shoppe""",135,parking,4063,17
+577,366,248,"b""Bud's Coffee Bar""",3470,"b""Sophie's Gown Shoppe""",195,healthy,3319,17
+578,366,248,"b""Bud's Coffee Bar""",3470,"b""Sophie's Gown Shoppe""",47,coffee,3455,17
+579,366,248,"b""Bud's Coffee Bar""",3470,"b""Sophie's Gown Shoppe""",176,tax,968,17
+580,366,248,"b""Bud's Coffee Bar""",3470,"b""Sophie's Gown Shoppe""",38,chocolate,1625,17
+581,366,1229,b'Woof! Dog Shop & Daycare',4139,"b""Sophie's Gown Shoppe""",160,overpriced,1176,10
+582,366,1229,b'Woof! Dog Shop & Daycare',4139,"b""Sophie's Gown Shoppe""",43,cake,3907,10
+583,366,1229,b'Woof! Dog Shop & Daycare',4139,"b""Sophie's Gown Shoppe""",136,store,830,10
+584,366,1229,b'Woof! Dog Shop & Daycare',4139,"b""Sophie's Gown Shoppe""",40,pizza,1393,10
+585,366,1229,b'Woof! Dog Shop & Daycare',4139,"b""Sophie's Gown Shoppe""",195,healthy,4072,10
+586,366,1707,b'Godiva Chocolatier',549,"b""Sophie's Gown Shoppe""",68,banana,3546,18
+587,366,1707,b'Godiva Chocolatier',549,"b""Sophie's Gown Shoppe""",38,chocolate,572,18
+588,366,1707,b'Godiva Chocolatier',549,"b""Sophie's Gown Shoppe""",18,bakery,121,18
+589,366,1707,b'Godiva Chocolatier',549,"b""Sophie's Gown Shoppe""",59,ice cream,3275,18
+590,366,1707,b'Godiva Chocolatier',549,"b""Sophie's Gown Shoppe""",216,baked,3690,18
+591,366,1793,"b""Windfield's Restaurant""",3837,"b""Sophie's Gown Shoppe""",43,cake,3645,12
+592,366,1793,"b""Windfield's Restaurant""",3837,"b""Sophie's Gown Shoppe""",95,corn,3919,12
+593,366,1793,"b""Windfield's Restaurant""",3837,"b""Sophie's Gown Shoppe""",232,north york,858,12
+594,366,1793,"b""Windfield's Restaurant""",3837,"b""Sophie's Gown Shoppe""",135,parking,2817,12
+595,366,1793,"b""Windfield's Restaurant""",3837,"b""Sophie's Gown Shoppe""",170,disappointing,1184,12
+596,366,4361,b'Bodira Cafe and Fine Foods',7136,"b""Sophie's Gown Shoppe""",43,cake,7391,5
+597,366,4361,b'Bodira Cafe and Fine Foods',7136,"b""Sophie's Gown Shoppe""",59,ice cream,7096,5
+598,366,4361,b'Bodira Cafe and Fine Foods',7136,"b""Sophie's Gown Shoppe""",140,movie,478,5
+599,366,4361,b'Bodira Cafe and Fine Foods',7136,"b""Sophie's Gown Shoppe""",38,chocolate,7150,5
+600,366,5626,b'The Alternative Cafe',61,"b""Sophie's Gown Shoppe""",123,steak,121,56
+601,366,5626,b'The Alternative Cafe',61,"b""Sophie's Gown Shoppe""",37,bread,9,56
+602,366,5626,b'The Alternative Cafe',61,"b""Sophie's Gown Shoppe""",209,smoked,12,56
+603,366,5626,b'The Alternative Cafe',61,"b""Sophie's Gown Shoppe""",157,greeted,57,56
+604,366,5626,b'The Alternative Cafe',61,"b""Sophie's Gown Shoppe""",32,taco,51,56
+605,367,24,b'Fit4Less',921,b'Take One Karaoke & Lounge',103,fruit,1223,31
+606,367,24,b'Fit4Less',921,b'Take One Karaoke & Lounge',114,tomato,220,31
+607,367,24,b'Fit4Less',921,b'Take One Karaoke & Lounge',89,crepe,48,31
+608,367,24,b'Fit4Less',921,b'Take One Karaoke & Lounge',127,fried chicken,41,31
+609,367,24,b'Fit4Less',921,b'Take One Karaoke & Lounge',167,pleasant,225,31
+610,367,777,b'Slanted Door',292,b'Take One Karaoke & Lounge',71,cone,496,19
+611,367,777,b'Slanted Door',292,b'Take One Karaoke & Lounge',59,ice cream,532,19
+612,367,777,b'Slanted Door',292,b'Take One Karaoke & Lounge',118,waffle,190,19
+613,367,777,b'Slanted Door',292,b'Take One Karaoke & Lounge',43,cake,465,19
+614,367,777,b'Slanted Door',292,b'Take One Karaoke & Lounge',78,strawberry,111,19
+615,367,853,"b""Sanelli's Cookery""",441,b'Take One Karaoke & Lounge',135,parking,3552,19
+616,367,853,"b""Sanelli's Cookery""",441,b'Take One Karaoke & Lounge',145,markham,501,19
+617,367,853,"b""Sanelli's Cookery""",441,b'Take One Karaoke & Lounge',23,asian,3532,19
+618,367,853,"b""Sanelli's Cookery""",441,b'Take One Karaoke & Lounge',95,corn,671,19
+619,367,853,"b""Sanelli's Cookery""",441,b'Take One Karaoke & Lounge',107,pancake,613,19
+620,367,1032,b'Anoush',324,b'Take One Karaoke & Lounge',124,salmon,233,33
+621,367,1032,b'Anoush',324,b'Take One Karaoke & Lounge',68,banana,330,33
+622,367,1032,b'Anoush',324,b'Take One Karaoke & Lounge',157,greeted,937,33
+623,367,1032,b'Anoush',324,b'Take One Karaoke & Lounge',83,calamari,195,33
+624,367,1032,b'Anoush',324,b'Take One Karaoke & Lounge',127,fried chicken,442,33
+625,367,1361,b'Thai Square',1736,b'Take One Karaoke & Lounge',95,corn,4225,59
+626,367,1361,b'Thai Square',1736,b'Take One Karaoke & Lounge',86,sesame,4194,59
+627,367,1361,b'Thai Square',1736,b'Take One Karaoke & Lounge',79,apple,79,59
+628,367,1361,b'Thai Square',1736,b'Take One Karaoke & Lounge',37,bread,1599,59
+629,367,1361,b'Thai Square',1736,b'Take One Karaoke & Lounge',80,avocado,583,59
+630,367,1407,b'Happy Congee',664,b'Take One Karaoke & Lounge',196,rare,1413,27
+631,367,1407,b'Happy Congee',664,b'Take One Karaoke & Lounge',139,theatre,0,27
+632,367,1407,b'Happy Congee',664,b'Take One Karaoke & Lounge',142,window,308,27
+633,367,1407,b'Happy Congee',664,b'Take One Karaoke & Lounge',160,overpriced,1752,27
+634,367,1407,b'Happy Congee',664,b'Take One Karaoke & Lounge',135,parking,1073,27
+635,367,2268,b'Circus Coffee House',163,b'Take One Karaoke & Lounge',209,smoked,140,66
+636,367,2268,b'Circus Coffee House',163,b'Take One Karaoke & Lounge',97,toast,31,66
+637,367,2268,b'Circus Coffee House',163,b'Take One Karaoke & Lounge',202,steamed,683,66
+638,367,2268,b'Circus Coffee House',163,b'Take One Karaoke & Lounge',167,pleasant,272,66
+639,367,2268,b'Circus Coffee House',163,b'Take One Karaoke & Lounge',47,coffee,151,66
+640,367,3482,b'Shawarma Grill Xpress',6581,b'Take One Karaoke & Lounge',91,wrap,998,26
+641,367,3482,b'Shawarma Grill Xpress',6581,b'Take One Karaoke & Lounge',161,cheaper,6676,26
+642,367,3482,b'Shawarma Grill Xpress',6581,b'Take One Karaoke & Lounge',136,store,219,26
+643,367,3482,b'Shawarma Grill Xpress',6581,b'Take One Karaoke & Lounge',144,chair,864,26
+644,367,3482,b'Shawarma Grill Xpress',6581,b'Take One Karaoke & Lounge',170,disappointing,1805,26
+645,367,4493,b'Starbucks',1403,b'Take One Karaoke & Lounge',27,bbq,1149,16
+646,367,4493,b'Starbucks',1403,b'Take One Karaoke & Lounge',81,juice,7129,16
+647,367,4493,b'Starbucks',1403,b'Take One Karaoke & Lounge',115,lobster,829,16
+648,367,4493,b'Starbucks',1403,b'Take One Karaoke & Lounge',59,ice cream,1708,16
+649,367,4493,b'Starbucks',1403,b'Take One Karaoke & Lounge',146,plaza,549,16
+650,367,5577,b'Bloor Village Flowers',55,b'Take One Karaoke & Lounge',106,matcha,0,47
+651,367,5577,b'Bloor Village Flowers',55,b'Take One Karaoke & Lounge',196,rare,68,47
+652,367,5577,b'Bloor Village Flowers',55,b'Take One Karaoke & Lounge',86,sesame,124,47
+653,367,5577,b'Bloor Village Flowers',55,b'Take One Karaoke & Lounge',44,sushi,73,47
+654,367,5577,b'Bloor Village Flowers',55,b'Take One Karaoke & Lounge',107,pancake,535,47
+655,367,6542,b'Enterprise Rent-A-Car',612,b'Take One Karaoke & Lounge',102,cheesecake,5571,35
+656,367,6542,b'Enterprise Rent-A-Car',612,b'Take One Karaoke & Lounge',129,green tea,1725,35
+657,367,6542,b'Enterprise Rent-A-Car',612,b'Take One Karaoke & Lounge',75,miso,996,35
+658,367,6542,b'Enterprise Rent-A-Car',612,b'Take One Karaoke & Lounge',170,disappointing,1899,35
+659,367,6542,b'Enterprise Rent-A-Car',612,b'Take One Karaoke & Lounge',80,avocado,505,35
+660,368,933,b'oriental porridge',225,b'DAVIDsTEA',49,cheese,321,21
+661,368,933,b'oriental porridge',225,b'DAVIDsTEA',43,cake,1248,21
+662,368,933,b'oriental porridge',225,b'DAVIDsTEA',30,seafood,267,21
+663,368,933,b'oriental porridge',225,b'DAVIDsTEA',161,cheaper,822,21
+664,368,933,b'oriental porridge',225,b'DAVIDsTEA',127,fried chicken,557,21
+665,368,2730,b'Roots - Eaton Center',1912,b'DAVIDsTEA',146,plaza,245,40
+666,368,2730,b'Roots - Eaton Center',1912,b'DAVIDsTEA',66,octopus,1789,40
+667,368,2730,b'Roots - Eaton Center',1912,b'DAVIDsTEA',61,tempura,196,40
+668,368,2730,b'Roots - Eaton Center',1912,b'DAVIDsTEA',130,bubble tea,723,40
+669,368,2730,b'Roots - Eaton Center',1912,b'DAVIDsTEA',84,kimchi,271,40
+670,368,3139,b'Wow! Wing House',272,b'DAVIDsTEA',103,fruit,236,38
+671,368,3139,b'Wow! Wing House',272,b'DAVIDsTEA',124,salmon,373,38
+672,368,3139,b'Wow! Wing House',272,b'DAVIDsTEA',155,refill,671,38
+673,368,3139,b'Wow! Wing House',272,b'DAVIDsTEA',23,asian,397,38
+674,368,3139,b'Wow! Wing House',272,b'DAVIDsTEA',83,calamari,423,38
+675,368,3338,b'Pho Com 99',210,b'DAVIDsTEA',135,parking,819,43
+676,368,3338,b'Pho Com 99',210,b'DAVIDsTEA',86,sesame,322,43
+677,368,3338,b'Pho Com 99',210,b'DAVIDsTEA',70,honey,373,43
+678,368,3338,b'Pho Com 99',210,b'DAVIDsTEA',30,seafood,981,43
+679,368,3338,b'Pho Com 99',210,b'DAVIDsTEA',157,greeted,33,43
+680,368,3512,b'Pet Valu',49,b'DAVIDsTEA',47,coffee,19,46
+681,368,3512,b'Pet Valu',49,b'DAVIDsTEA',42,sandwich,668,46
+682,368,3512,b'Pet Valu',49,b'DAVIDsTEA',207,stuffed,20,46
+683,368,3512,b'Pet Valu',49,b'DAVIDsTEA',216,baked,80,46
+684,368,3512,b'Pet Valu',49,b'DAVIDsTEA',22,french,197,46
+685,368,3628,b'Hair Artzy',1007,b'DAVIDsTEA',59,ice cream,1373,8
+686,368,3628,b'Hair Artzy',1007,b'DAVIDsTEA',176,tax,476,8
+687,368,3628,b'Hair Artzy',1007,b'DAVIDsTEA',194,gravy,354,8
+688,368,3628,b'Hair Artzy',1007,b'DAVIDsTEA',229,uber eats,1161,8
+689,368,3628,b'Hair Artzy',1007,b'DAVIDsTEA',40,pizza,6043,8
+690,368,4257,b'Room1Six',7246,b'DAVIDsTEA',37,bread,983,16
+691,368,4257,b'Room1Six',7246,b'DAVIDsTEA',167,pleasant,1834,16
+692,368,4257,b'Room1Six',7246,b'DAVIDsTEA',143,station,1678,16
+693,368,4257,b'Room1Six',7246,b'DAVIDsTEA',71,cone,7203,16
+694,368,4257,b'Room1Six',7246,b'DAVIDsTEA',18,bakery,7246,16
+695,369,682,b'Creeds Dry Cleaning',4053,b'Kingston Road Flower Market',143,station,4030,5
+696,369,682,b'Creeds Dry Cleaning',4053,b'Kingston Road Flower Market',81,juice,2817,5
+697,369,682,b'Creeds Dry Cleaning',4053,b'Kingston Road Flower Market',166,spacious,2833,5
+698,369,682,b'Creeds Dry Cleaning',4053,b'Kingston Road Flower Market',48,burger,2964,5
+699,369,1682,b'Soco Kitchen and Bar',1427,b'Kingston Road Flower Market',79,apple,3721,27
+700,369,1682,b'Soco Kitchen and Bar',1427,b'Kingston Road Flower Market',209,smoked,1414,27
+701,369,1682,b'Soco Kitchen and Bar',1427,b'Kingston Road Flower Market',95,corn,1417,27
+702,369,1682,b'Soco Kitchen and Bar',1427,b'Kingston Road Flower Market',12,mexican,656,27
+703,369,1682,b'Soco Kitchen and Bar',1427,b'Kingston Road Flower Market',193,mayo,1541,27
+704,369,2503,b'Sugar Marmalade',465,b'Kingston Road Flower Market',211,seasoned,469,23
+705,369,2503,b'Sugar Marmalade',465,b'Kingston Road Flower Market',69,cookie,980,23
+706,369,2503,b'Sugar Marmalade',465,b'Kingston Road Flower Market',72,scallop,586,23
+707,369,2503,b'Sugar Marmalade',465,b'Kingston Road Flower Market',49,cheese,482,23
+708,369,2503,b'Sugar Marmalade',465,b'Kingston Road Flower Market',196,rare,730,23
+709,369,5968,b'7-Eleven',1357,b'Kingston Road Flower Market',142,window,399,19
+710,369,5968,b'7-Eleven',1357,b'Kingston Road Flower Market',167,pleasant,693,19
+711,369,5968,b'7-Eleven',1357,b'Kingston Road Flower Market',124,salmon,1009,19
+712,369,5968,b'7-Eleven',1357,b'Kingston Road Flower Market',28,japanese,662,19
+713,369,5968,b'7-Eleven',1357,b'Kingston Road Flower Market',44,sushi,4322,19
+714,369,6776,b'Juicy Dumpling',14,b'Kingston Road Flower Market',68,banana,6,63
+715,369,6776,b'Juicy Dumpling',14,b'Kingston Road Flower Market',42,sandwich,22,63
+716,369,6776,b'Juicy Dumpling',14,b'Kingston Road Flower Market',102,cheesecake,24,63
+717,369,6776,b'Juicy Dumpling',14,b'Kingston Road Flower Market',103,fruit,55,63
+718,369,6776,b'Juicy Dumpling',14,b'Kingston Road Flower Market',205,gelato,12,63
+719,369,7096,b'Pho Dau Bo Restaurant',665,b'Kingston Road Flower Market',80,avocado,112,27
+720,369,7096,b'Pho Dau Bo Restaurant',665,b'Kingston Road Flower Market',23,asian,5089,27
+721,369,7096,b'Pho Dau Bo Restaurant',665,b'Kingston Road Flower Market',196,rare,217,27
+722,369,7096,b'Pho Dau Bo Restaurant',665,b'Kingston Road Flower Market',195,healthy,428,27
+723,369,7096,b'Pho Dau Bo Restaurant',665,b'Kingston Road Flower Market',207,stuffed,5164,27
+724,370,1649,b'LaPaz Batchoy Toronto',808,b'The Fifth Social Club',163,dog,297,3
+725,370,1649,b'LaPaz Batchoy Toronto',808,b'The Fifth Social Club',195,healthy,203,3
+726,371,126,b'Sparkle Discount Cleaners',545,b'Sweetgrass Spa',207,stuffed,2117,22
+727,371,126,b'Sparkle Discount Cleaners',545,b'Sweetgrass Spa',60,squid,3190,22
+728,371,126,b'Sparkle Discount Cleaners',545,b'Sweetgrass Spa',155,refill,750,22
+729,371,126,b'Sparkle Discount Cleaners',545,b'Sweetgrass Spa',170,disappointing,991,22
+730,371,126,b'Sparkle Discount Cleaners',545,b'Sweetgrass Spa',161,cheaper,1777,22
+731,371,386,b'Queen of Persia',235,b'Sweetgrass Spa',158,bright,376,27
+732,371,386,b'Queen of Persia',235,b'Sweetgrass Spa',231,grand opening,1361,27
+733,371,386,b'Queen of Persia',235,b'Sweetgrass Spa',38,chocolate,1842,27
+734,371,386,b'Queen of Persia',235,b'Sweetgrass Spa',170,disappointing,1861,27
+735,371,386,b'Queen of Persia',235,b'Sweetgrass Spa',157,greeted,101,27
+736,371,2601,b'Cosmopawlitan',1393,b'Sweetgrass Spa',145,markham,229,27
+737,371,2601,b'Cosmopawlitan',1393,b'Sweetgrass Spa',106,matcha,635,27
+738,371,2601,b'Cosmopawlitan',1393,b'Sweetgrass Spa',47,coffee,2841,27
+739,371,2601,b'Cosmopawlitan',1393,b'Sweetgrass Spa',82,booth,1427,27
+740,371,2601,b'Cosmopawlitan',1393,b'Sweetgrass Spa',144,chair,1259,27
+741,371,2812,b'World Fine Cars',256,b'Sweetgrass Spa',190,smooth,931,26
+742,371,2812,b'World Fine Cars',256,b'Sweetgrass Spa',158,bright,128,26
+743,371,2812,b'World Fine Cars',256,b'Sweetgrass Spa',143,station,198,26
+744,371,2812,b'World Fine Cars',256,b'Sweetgrass Spa',38,chocolate,141,26
+745,371,2812,b'World Fine Cars',256,b'Sweetgrass Spa',142,window,30,26
+746,371,2843,b'Bloor-Yonge Subway Station',34,b'Sweetgrass Spa',78,strawberry,39,57
+747,371,2843,b'Bloor-Yonge Subway Station',34,b'Sweetgrass Spa',62,tapioca,293,57
+748,371,2843,b'Bloor-Yonge Subway Station',34,b'Sweetgrass Spa',106,matcha,59,57
+749,371,2843,b'Bloor-Yonge Subway Station',34,b'Sweetgrass Spa',123,steak,57,57
+750,371,2843,b'Bloor-Yonge Subway Station',34,b'Sweetgrass Spa',70,honey,43,57
+751,371,2847,b'Copacabana Brazilian Steakhouse',13,b'Sweetgrass Spa',37,bread,15,52
+752,371,2847,b'Copacabana Brazilian Steakhouse',13,b'Sweetgrass Spa',91,wrap,155,52
+753,371,2847,b'Copacabana Brazilian Steakhouse',13,b'Sweetgrass Spa',191,frozen,20,52
+754,371,2847,b'Copacabana Brazilian Steakhouse',13,b'Sweetgrass Spa',17,pub,32,52
+755,371,2847,b'Copacabana Brazilian Steakhouse',13,b'Sweetgrass Spa',97,toast,52,52
+756,371,7369,b'The Gabardine',555,b'Sweetgrass Spa',167,pleasant,895,20
+757,371,7369,b'The Gabardine',555,b'Sweetgrass Spa',231,grand opening,399,20
+758,371,7369,b'The Gabardine',555,b'Sweetgrass Spa',95,corn,5247,20
+759,371,7369,b'The Gabardine',555,b'Sweetgrass Spa',136,store,1113,20
+760,371,7369,b'The Gabardine',555,b'Sweetgrass Spa',68,banana,1811,20
+761,374,467,b'The Gym at 99 Sudbury',64,b'Yummy Yummy Dumplings',207,stuffed,192,43
+762,374,467,b'The Gym at 99 Sudbury',64,b'Yummy Yummy Dumplings',176,tax,438,43
+763,374,467,b'The Gym at 99 Sudbury',64,b'Yummy Yummy Dumplings',59,ice cream,226,43
+764,374,467,b'The Gym at 99 Sudbury',64,b'Yummy Yummy Dumplings',79,apple,1374,43
+765,374,467,b'The Gym at 99 Sudbury',64,b'Yummy Yummy Dumplings',103,fruit,118,43
+766,374,1066,b'Cluck Clucks',597,b'Yummy Yummy Dumplings',166,spacious,237,32
+767,374,1066,b'Cluck Clucks',597,b'Yummy Yummy Dumplings',223,general tao,297,32
+768,374,1066,b'Cluck Clucks',597,b'Yummy Yummy Dumplings',107,pancake,379,32
+769,374,1066,b'Cluck Clucks',597,b'Yummy Yummy Dumplings',91,wrap,929,32
+770,374,1066,b'Cluck Clucks',597,b'Yummy Yummy Dumplings',158,bright,2256,32
+771,374,1522,b'WestJet Stage',9,b'Yummy Yummy Dumplings',106,matcha,10,62
+772,374,1522,b'WestJet Stage',9,b'Yummy Yummy Dumplings',28,japanese,23,62
+773,374,1522,b'WestJet Stage',9,b'Yummy Yummy Dumplings',103,fruit,2,62
+774,374,1522,b'WestJet Stage',9,b'Yummy Yummy Dumplings',125,pasta,7,62
+775,374,1522,b'WestJet Stage',9,b'Yummy Yummy Dumplings',142,window,195,62
+776,374,1874,b'Fresh & Wild',451,b'Yummy Yummy Dumplings',14,buffet,1591,31
+777,374,1874,b'Fresh & Wild',451,b'Yummy Yummy Dumplings',57,dim sum,693,31
+778,374,1874,b'Fresh & Wild',451,b'Yummy Yummy Dumplings',70,honey,3849,31
+779,374,1874,b'Fresh & Wild',451,b'Yummy Yummy Dumplings',27,bbq,707,31
+780,374,1874,b'Fresh & Wild',451,b'Yummy Yummy Dumplings',60,squid,1200,31
+781,374,2038,b'Mona Richie Bridal',135,b'Yummy Yummy Dumplings',110,sashimi,42,48
+782,374,2038,b'Mona Richie Bridal',135,b'Yummy Yummy Dumplings',137,shopping,218,48
+783,374,2038,b'Mona Richie Bridal',135,b'Yummy Yummy Dumplings',176,tax,328,48
+784,374,2038,b'Mona Richie Bridal',135,b'Yummy Yummy Dumplings',158,bright,1047,48
+785,374,2038,b'Mona Richie Bridal',135,b'Yummy Yummy Dumplings',75,miso,229,48
+786,374,2388,b'Getoutside',604,b'Yummy Yummy Dumplings',121,dumpling,78,34
+787,374,2388,b'Getoutside',604,b'Yummy Yummy Dumplings',158,bright,178,34
+788,374,2388,b'Getoutside',604,b'Yummy Yummy Dumplings',134,pork bone soup,607,34
+789,374,2388,b'Getoutside',604,b'Yummy Yummy Dumplings',123,steak,404,34
+790,374,2388,b'Getoutside',604,b'Yummy Yummy Dumplings',86,sesame,259,34
+791,374,2760,b'La Limonada',146,b'Yummy Yummy Dumplings',68,banana,154,53
+792,374,2760,b'La Limonada',146,b'Yummy Yummy Dumplings',171,fancy,492,53
+793,374,2760,b'La Limonada',146,b'Yummy Yummy Dumplings',135,parking,148,53
+794,374,2760,b'La Limonada',146,b'Yummy Yummy Dumplings',27,bbq,113,53
+795,374,2760,b'La Limonada',146,b'Yummy Yummy Dumplings',80,avocado,297,53
+796,374,3139,b'Wow! Wing House',511,b'Yummy Yummy Dumplings',144,chair,1009,38
+797,374,3139,b'Wow! Wing House',511,b'Yummy Yummy Dumplings',27,bbq,246,38
+798,374,3139,b'Wow! Wing House',511,b'Yummy Yummy Dumplings',232,north york,170,38
+799,374,3139,b'Wow! Wing House',511,b'Yummy Yummy Dumplings',123,steak,1997,38
+800,374,3139,b'Wow! Wing House',511,b'Yummy Yummy Dumplings',47,coffee,6440,38
+801,374,3231,b'Alex Farm Products',1823,b'Yummy Yummy Dumplings',125,pasta,6387,27
+802,374,3231,b'Alex Farm Products',1823,b'Yummy Yummy Dumplings',42,sandwich,6336,27
+803,374,3231,b'Alex Farm Products',1823,b'Yummy Yummy Dumplings',146,plaza,6352,27
+804,374,3231,b'Alex Farm Products',1823,b'Yummy Yummy Dumplings',158,bright,6714,27
+805,374,3231,b'Alex Farm Products',1823,b'Yummy Yummy Dumplings',47,coffee,6667,27
+806,374,3412,b'Shangri-La Banquet Hall & Convention Centre',850,b'Yummy Yummy Dumplings',192,sweetness,637,43
+807,374,3412,b'Shangri-La Banquet Hall & Convention Centre',850,b'Yummy Yummy Dumplings',145,markham,238,43
+808,374,3412,b'Shangri-La Banquet Hall & Convention Centre',850,b'Yummy Yummy Dumplings',76,lettuce,67,43
+809,374,3412,b'Shangri-La Banquet Hall & Convention Centre',850,b'Yummy Yummy Dumplings',146,plaza,202,43
+810,374,3412,b'Shangri-La Banquet Hall & Convention Centre',850,b'Yummy Yummy Dumplings',157,greeted,1914,43
+811,374,4164,b'Gilaneh Restaurant',122,b'Yummy Yummy Dumplings',193,mayo,30,52
+812,374,4164,b'Gilaneh Restaurant',122,b'Yummy Yummy Dumplings',97,toast,114,52
+813,374,4164,b'Gilaneh Restaurant',122,b'Yummy Yummy Dumplings',170,disappointing,14,52
+814,374,4164,b'Gilaneh Restaurant',122,b'Yummy Yummy Dumplings',115,lobster,61,52
+815,374,4164,b'Gilaneh Restaurant',122,b'Yummy Yummy Dumplings',95,corn,115,52

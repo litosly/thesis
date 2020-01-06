@@ -1,0 +1,56 @@
+,user_id,target_item,item_name,iter,pre_rank,top_prediction_item_name,critiqued_keyphrase,keyphrase_name,post_rank,num_existing_keyphrases
+0,2,75,b'Salad King Restaurant',0,86,b'Pai Northern Thai Kitchen',50,salad,2,10
+1,2,75,b'Salad King Restaurant',1,86,b'Pai Northern Thai Kitchen',54,noodle,89,10
+2,2,75,b'Salad King Restaurant',2,86,b'Pai Northern Thai Kitchen',1,fast,13,10
+3,2,75,b'Salad King Restaurant',3,86,b'Pai Northern Thai Kitchen',199,chili,15,10
+4,2,75,b'Salad King Restaurant',4,86,b'Pai Northern Thai Kitchen',133,fried rice,11,10
+5,2,637,b'Daldongnae',0,16,b'Pai Northern Thai Kitchen',95,corn,4,10
+6,2,637,b'Daldongnae',1,16,b'Pai Northern Thai Kitchen',55,meat,12,10
+7,2,637,b'Daldongnae',2,16,b'Pai Northern Thai Kitchen',27,bbq,1,10
+8,2,637,b'Daldongnae',3,16,b'Pai Northern Thai Kitchen',49,cheese,1,10
+9,2,637,b'Daldongnae',4,16,b'Pai Northern Thai Kitchen',51,pork,13,10
+10,2,648,b'Yunnan Steamed Fish Pot',0,2873,b'Pai Northern Thai Kitchen',46,fish,2270,10
+11,2,648,b'Yunnan Steamed Fish Pot',1,2873,b'Pai Northern Thai Kitchen',202,steamed,2749,10
+12,2,648,b'Yunnan Steamed Fish Pot',2,2873,b'Pai Northern Thai Kitchen',53,tea,1207,10
+13,2,648,b'Yunnan Steamed Fish Pot',3,2873,b'Pai Northern Thai Kitchen',152,fresh,3212,10
+14,2,648,b'Yunnan Steamed Fish Pot',4,2873,b'Pai Northern Thai Kitchen',148,mall,1176,10
+15,2,712,b'Pho Viet Xpress',0,212,b'Pai Northern Thai Kitchen',150,clean,1401,10
+16,2,712,b'Pho Viet Xpress',1,212,b'Pai Northern Thai Kitchen',9,soup,241,10
+17,2,712,b'Pho Viet Xpress',2,212,b'Pai Northern Thai Kitchen',55,meat,56,10
+18,2,712,b'Pho Viet Xpress',3,212,b'Pai Northern Thai Kitchen',54,noodle,128,10
+19,2,712,b'Pho Viet Xpress',4,212,b'Pai Northern Thai Kitchen',13,vietnamese,286,10
+20,2,1082,b'Kub Khao Thai Eatery',0,275,b'Pai Northern Thai Kitchen',143,station,414,10
+21,2,1082,b'Kub Khao Thai Eatery',1,275,b'Pai Northern Thai Kitchen',146,plaza,79,10
+22,2,1082,b'Kub Khao Thai Eatery',2,275,b'Pai Northern Thai Kitchen',50,salad,1908,10
+23,2,1082,b'Kub Khao Thai Eatery',3,275,b'Pai Northern Thai Kitchen',8,lunch,922,10
+24,2,1082,b'Kub Khao Thai Eatery',4,275,b'Pai Northern Thai Kitchen',56,chicken,112,10
+25,2,1254,b'Chung King Garden Restaurant',0,4045,b'Pai Northern Thai Kitchen',108,duck,3524,10
+26,2,1254,b'Chung King Garden Restaurant',1,4045,b'Pai Northern Thai Kitchen',35,crispy,1671,10
+27,2,1254,b'Chung King Garden Restaurant',2,4045,b'Pai Northern Thai Kitchen',52,beef,3671,10
+28,2,1254,b'Chung King Garden Restaurant',3,4045,b'Pai Northern Thai Kitchen',91,wrap,3509,10
+29,2,1254,b'Chung King Garden Restaurant',4,4045,b'Pai Northern Thai Kitchen',0,chinese,4307,10
+30,2,1522,b'MeNami',0,4,b'Pai Northern Thai Kitchen',95,corn,3,10
+31,2,1522,b'MeNami',1,4,b'Pai Northern Thai Kitchen',124,salmon,10,10
+32,2,1522,b'MeNami',2,4,b'Pai Northern Thai Kitchen',216,baked,3,10
+33,2,1522,b'MeNami',3,4,b'Pai Northern Thai Kitchen',86,sesame,0,10
+34,2,1522,b'MeNami',4,4,b'Pai Northern Thai Kitchen',49,cheese,5,10
+35,2,3838,b'Lucullus Bakers & Roasters',0,853,b'Pai Northern Thai Kitchen',18,bakery,486,10
+36,2,3838,b'Lucullus Bakers & Roasters',1,853,b'Pai Northern Thai Kitchen',119,bun,1235,10
+37,2,3838,b'Lucullus Bakers & Roasters',2,853,b'Pai Northern Thai Kitchen',128,milk tea,90,10
+38,2,3838,b'Lucullus Bakers & Roasters',3,853,b'Pai Northern Thai Kitchen',0,chinese,360,10
+39,2,3838,b'Lucullus Bakers & Roasters',4,853,b'Pai Northern Thai Kitchen',53,tea,108,10
+40,2,4130,b'Atlas Medical Clinic',0,6135,b'Pai Northern Thai Kitchen',166,spacious,6107,10
+41,2,4130,b'Atlas Medical Clinic',1,6135,b'Pai Northern Thai Kitchen',150,clean,6195,10
+42,2,4130,b'Atlas Medical Clinic',2,6135,b'Pai Northern Thai Kitchen',154,convenient,6106,10
+43,2,4130,b'Atlas Medical Clinic',3,6135,b'Pai Northern Thai Kitchen',1,fast,887,10
+44,2,4130,b'Atlas Medical Clinic',4,6135,b'Pai Northern Thai Kitchen',149,quick,6119,10
+45,2,4397,b'Fishman Lobster Clubhouse Restaurant',0,10,b'Pai Northern Thai Kitchen',115,lobster,0,10
+46,2,4397,b'Fishman Lobster Clubhouse Restaurant',1,10,b'Pai Northern Thai Kitchen',30,seafood,3,10
+47,2,4397,b'Fishman Lobster Clubhouse Restaurant',2,10,b'Pai Northern Thai Kitchen',5,fried,9,10
+48,2,4397,b'Fishman Lobster Clubhouse Restaurant',3,10,b'Pai Northern Thai Kitchen',46,fish,2,10
+49,2,4397,b'Fishman Lobster Clubhouse Restaurant',4,10,b'Pai Northern Thai Kitchen',133,fried rice,4,10
+50,2,4443,b'Khao San Road',0,57,b'Pai Northern Thai Kitchen',185,wait,2,10
+51,2,4443,b'Khao San Road',1,57,b'Pai Northern Thai Kitchen',3,bar,5,10
+52,2,4443,b'Khao San Road',2,57,b'Pai Northern Thai Kitchen',187,spicy,39,10
+53,2,4443,b'Khao San Road',3,57,b'Pai Northern Thai Kitchen',8,lunch,42,10
+54,2,4443,b'Khao San Road',4,57,b'Pai Northern Thai Kitchen',152,fresh,7,10
