@@ -1,0 +1,318 @@
+def single_step_critiquing_experiment(user = 2, 
+                           keyphrase_length_threshold = 150, 
+                           max_iteration_threshold = 5,
+                           k = 50,
+                           df = df,
+                           row = row,
+                           business_df = business_df,
+                           keyphrases = keyphrases,
+                           keyphrase_popularity = keyphrase_popularity, 
+                           keyphrase_selection_method = 'random',
+                           recommend_type = 'all',
+                           lams = [0,0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,1] 
+                          ):
+    """
+    k: HR@k 
+    keyphrase_length_threshold: limit the number of keyphrases in top recommended item
+    keyphrase_selection_method: 'random': randomly select keyphrase from wanted_keyphrases
+                                'pop': always select the most popular keyphrase in wanted_keyphrases
+                                'diff': select the keyphrase with largest frequency difference between top recommended 
+                                        item and target item.
+    recommend_type: 'all': recommend all items
+                    'upper' (only_with_critiqued_keyphrase): recommend items with only critiqued_keyphrase
+    lam: modified_matrix = lam*origianl_matrix + (1-lam)*critiquing_embedding 
+    """
+    
+    row['user_id'] = user
+    print ('User ID ', user)
+    
+    # Set up (move to header line later)
+    matrix_Train = rtrain
+    matrix_Test = rtest
+    keyphrase_freq = I_K
+    num_items = rtrain.shape[1]
+    max_wanted_keyphrase = 10 # for keyphrase_selection_method == "diff"
+    initial_user_similarity_embedding = normalize(train(matrix_Train))
+    
+    # Get wanted items 
+    candidate_items = matrix_Test[user].nonzero()[1]
+    train_items = matrix_Train[user].nonzero()[1]
+    wanted_items = np.setdiff1d(candidate_items, train_items)
+    print ('wanted_items length: ',len(wanted_items))
+    
+    # Get initial forward prediction 
+    prediction_score,clf = get_initial_prediction(user, X = normalize(U_K.todense()), y = normalize(train(rtrain)),
+                            matrix_Train = rtrain, k = 100)
+    
+    # Get initial top recommended item(s)
+    top_recommendations = np.argsort(prediction_score)[::-1]
+    print ("Initial top recommendation index",top_recommendations[0])
+    try:
+        row['top_prediction_item_name'] = get_restaurant_name(df_train, business_df, top_recommendations[0])
+    # in case we cannot get the restaurant name
+    except: 
+        row['top_prediction_item_name'] = 'CANNOT_FIND'
+        print ('Cannot get restaurant name for ItemIndex: ', top_recommendations[0])
+    
+    
+    # Get top recommended item's keyphrases
+    top_item = top_recommendations[0] 
+    top_recommend_keyphrases = get_valid_keyphrases(keyphrase_freq,
+                                                    top_recommendations, 
+                                                    item = top_item,
+                                                    threshold=keyphrase_length_threshold,
+                                                    mutiple_keyphrases_en = False, 
+                                                    top_items = None)
+    print ('num_top_recommended_keyphrases ',len(top_recommend_keyphrases))
+
+    if keyphrase_selection_method == 'diff':
+        top_recommended_keyphrase_freq = get_item_keyphrase_freq(keyphrase_freq,item = top_item)
+    
+    
+    #####################################
+    # For each item, do the critiquing
+    
+    #limit the item to only 10
+    num_target_item = 0 # initialize item count
+    
+    for item in wanted_items:    
+        print ('target_item: ', item)
+        row['target_item'] = item
+        try:
+            row['item_name'] = get_restaurant_name(df_train, business_df, item)
+        except:
+            row['item_name'] = 'CANNOT_FIND'
+            print ('Cannot get restaurant name for ItemIndex: ', item)
+
+        # Get pre-critiquing rank
+        initial_rank = np.where(item == np.argsort(prediction_score)[::-1])[0][0]
+#         print ('target_item initial rank', int(initial_rank))
+        row['pre_rank'] = int(initial_rank)
+
+        # Get the target item's existing keyphrases
+        item_keyphrases = keyphrase_freq[item].nonzero()[1]
+#         print ('num_existing_keyphrases ',len(item_keyphrases))
+        
+        if keyphrase_selection_method == 'diff':
+            target_keyphrase_freq = get_item_keyphrase_freq(keyphrase_freq,item = item)
+            # indicate the keyphrase with large freq in target_item but small_keyphrase in top_recommended items
+            diff_keyphrase_freq = target_keyphrase_freq - top_recommended_keyphrase_freq
+            
+        # Get wanted keyphrases
+        if keyphrase_selection_method != 'diff':
+            # Get keyphrases that is not in the top recommended items but in the target item (we can select)
+            wanted_keyphrases = np.setdiff1d(item_keyphrases,top_recommend_keyphrases)
+
+            if len(wanted_keyphrases) == 0:
+                print ("wanted_keyphrases is empty")
+                break
+            row['num_existing_keyphrases'] = len(wanted_keyphrases)
+            
+        # For 'diff'
+        else:
+            wanted_keyphrases = np.argsort(np.ravel(diff_keyphrase_freq))[::-1][:max_wanted_keyphrase]
+            row['num_existing_keyphrases'] = len(wanted_keyphrases)
+
+        affected_items = np.array([])
+        modified_matrix = initial_user_similarity_embedding # initialize user similarity embedding
+        
+        #############################################
+        # Critiquing iteration
+        for iteration in range(max_iteration_threshold):
+            print ('cur_iter ', iteration)
+            row['iter'] = iteration
+            if keyphrase_selection_method == 'random':
+                # Randomly critique one keyphrase
+                critiqued_keyphrase = np.random.choice(wanted_keyphrases, size=1, replace=False)[0]
+            elif keyphrase_selection_method == 'pop':
+                # Always critique the most popular keyphrase
+                critiqued_keyphrase = wanted_keyphrases[np.argmax(keyphrase_popularity[wanted_keyphrases])]
+            elif keyphrase_selection_method == 'diff':
+                # critique the keyphrase with largest freq diff between top recommended_item and target_item
+                critiqued_keyphrase = wanted_keyphrases[0]
+#                 print (critiqued_keyphrase)
+            
+#             print ('critiqued_keyphrase ,',critiqued_keyphrase, keyphrases[critiqued_keyphrase])
+            row['critiqued_keyphrase'] = critiqued_keyphrase
+            row['keyphrase_name'] = keyphrases[critiqued_keyphrase]
+            
+            # Do not critique this keyphrase next time
+            wanted_keyphrases = np.delete(wanted_keyphrases, np.where(critiqued_keyphrase == wanted_keyphrases))
+            if len(wanted_keyphrases) == 0: 
+                print ('no more keyphrase available')
+                break
+            
+            # Get affected items (items have critiqued keyphrase)
+            current_affected_items = keyphrase_freq[:, critiqued_keyphrase].nonzero()[0]
+            affected_items = np.unique(np.concatenate((affected_items, current_affected_items))).astype(int) 
+            unaffected_items = np.setdiff1d(range(num_items), affected_items)
+
+            # Critiquing Embedding
+
+            # One hot encoding
+            critiqued_matrix_onehot = get_critiqued_UK(U_K,user,critiqued_keyphrase)
+            critiqued_matrix = clf.predict(critiqued_matrix_onehot)
+            critiqued_matrix = normalize(critiqued_matrix)
+            
+#             critiqued_matrix = project_one_hot_encoding(clf, 
+#                                                         U_K,
+#                                                         user_index = user,
+#                                                         critiqued_keyphrase = critiqued_keyphrase, 
+#                                                         normalize_en = True)
+
+#             modified_matrix = modified_matrix + critiqued_matrix # averaging user-item embedding and critiquing embeeding
+            
+            # Warning!!! The following is used only for testing single step critiquing, 
+            # for full average critiquing, use the above commented line 
+            post_ranks = []
+            for lam in lams:
+                modified_matrix = (1-lam)*normalize(train(matrix_Train)) + lam*critiqued_matrix 
+#                 modified_matrix = normalize(modified_matrix)
+                if lam == 0:
+                    print (modified_matrix == initial_user_similarity_embedding)
+            
+                # Get new predictions from modified embedding
+                if recommend_type == 'all':
+                    prediction_scores_u = predict_vector(user, matrix_Train, 100, modified_matrix)
+                if recommend_type == 'upper':
+                    prediction_scores_u = predict_vector(user, matrix_Train, 100, modified_matrix, 
+                                                         with_keyphrase = True, 
+                                                         keyphrase_freq = keyphrase_freq, 
+                                                         critiqued_keyphrase = critiqued_keyphrase, 
+                                                         alpha = 0)
+                post_critique_rank = np.where(item == np.argsort(prediction_scores_u)[::-1])[0][0]
+                print ('target_item post-critique rank with lambda '+str(lam), int(post_critique_rank))
+                post_rank = int(post_critique_rank)
+                post_ranks.append(post_rank)
+            row['post_rank'] = post_ranks
+            row['post_rank0'] = post_ranks[0]
+            row['post_rank1'] = post_ranks[1]
+            row['post_rank2'] = post_ranks[2]
+            row['post_rank3'] = post_ranks[3]
+            row['post_rank4'] = post_ranks[4]
+            row['post_rank5'] = post_ranks[5]
+            row['post_rank6'] = post_ranks[6]
+            row['post_rank7'] = post_ranks[7]
+            row['post_rank8'] = post_ranks[8]
+            row['post_rank9'] = post_ranks[9]
+            row['post_rank10'] = post_ranks[10]
+            df = df.append(row, ignore_index=True)
+            
+
+        # break after got 10 target items 
+        num_target_item += 1
+        if num_target_item >10: # only want max 10 items per user
+            break
+            
+    return df
+
+
+def get_valid_keyphrases(keyphrase_freq,top_recommendations,item = None,threshold=50,mutiple_keyphrases_en = False, top_items = None):
+    """
+    Wrapper function to get either top 1 or top n keyphrases
+    """
+    if mutiple_keyphrases_en:
+        top_keyphrases = []
+        for item in top_items:
+            top_keyphrases.extend(get_valid_keyphrases_for_one_item(keyphrase_freq,top_recommendations,item,threshold=threshold))
+        return np.ravel(list(set(top_keyphrases))) # remove duplicate and reformat to np array
+    else:
+        return get_valid_keyphrases_for_one_item(keyphrase_freq,top_recommendations,item,threshold=threshold)
+
+def get_valid_keyphrases_for_one_item(keyphrase_freq,top_recommendations, item,threshold=50):
+    """
+    Get keyphrases of item that make sense
+    E.g. if the item has fewer than threshold=50 keyphrases, get all of them
+    otherwise get top 50 keyphrases
+    """
+    keyphrase_length = len(keyphrase_freq[item].nonzero()[1])
+    if keyphrase_length<threshold:
+        return keyphrase_freq[item].nonzero()[1]
+    else:
+        keyphrases = np.ravel(keyphrase_freq[top_recommendations[0]].todense())
+        top_keyphrases = np.argsort(keyphrases)[::-1][:threshold]
+        return top_keyphrases
+    
+def predict_vector(user_index, matrix_train, k, similarity, with_keyphrase = False, 
+                   keyphrase_freq = None, critiqued_keyphrase = None, alpha = 0):
+    """
+    get only user_index row
+    if with_keyphrase = True, then penalize items without critiqued_keyphrase to alpha (default = 0)
+    """
+    vector_u = similarity[user_index]
+    
+    # Get closest K neighbors excluding user u self
+    similar_users = vector_u.argsort()[::-1][1:k+1]
+    # Get neighbors similarity weights and ratings
+    similar_users_weights = similarity[user_index][similar_users]
+    similar_users_ratings = matrix_train[similar_users].toarray()
+    
+    prediction_scores_u = similar_users_ratings * similar_users_weights[:, np.newaxis]
+    
+    if with_keyphrase == False:
+        return np.sum(prediction_scores_u, axis=0)
+    
+    # Only Predict items with critiqued_keyphrase 
+    else:
+        prediction_scores = np.sum(prediction_scores_u, axis=0)
+#         print (prediction_scores)
+        #penalize items without critiqued keyphrase
+        items_with_keyphrase = np.ravel(keyphrase_freq.T[critiqued_keyphrase].nonzero()[1])
+#         print (items_with_keyphrase)
+        #Return the unique values in ar1 that are not in ar2.
+        items_without_keyphrase = np.setdiff1d(np.arange(matrix_train.shape[1]), items_with_keyphrase)
+        prediction_scores[items_without_keyphrase] = alpha # penalize
+        return prediction_scores
+
+    
+def get_initial_prediction(user,X = normalize(U_K.todense()), y = normalize(train(rtrain)),
+                            matrix_Train = rtrain, k = 100):
+    """
+    Get the initial knn predictions before critiquing pipelines
+    get the linear regression model for critiquing embedding (W_2)
+    get the initial user similarity matrix 
+    k here is the parameter for KNN
+    """
+    clf = Ridge(alpha=0.1).fit(X, y)
+    similarity = normalize(train(matrix_Train))
+    user_item_prediction_score = predict_vector(user, matrix_Train, k, similarity)
+    return user_item_prediction_score, clf
+
+
+if __name__ == '__main__':
+    
+    single_step_with_avg_path = "../tables/critiquing/single_step_lam_0105/"
+
+    # post_ranki is post rank with different lambda ratio for combining pre-post User similarity matrix 
+    columns = ['user_id', 'target_item', 'item_name', 'iter', 'pre_rank', 
+               'top_prediction_item_name','critiqued_keyphrase', 'keyphrase_name', 
+               'post_rank0', 
+               'post_rank1', 
+               'post_rank2', 
+               'post_rank3', 
+               'post_rank4', 
+               'post_rank5', 
+               'post_rank6', 
+               'post_rank7', 
+               'post_rank8',
+               'post_rank9',
+               'post_rank10',
+               'num_existing_keyphrases'] 
+    df = pd.DataFrame(columns=columns)
+    row = {}
+
+    #only_with_critiqued_keyphrase
+    for user in range(300,301):
+        df = single_step_critiquing_experiment(user = user, 
+                               keyphrase_length_threshold = 230, 
+                               max_iteration_threshold = 10,
+                               k = 50,
+                               df = df,
+                               row = row,
+                               business_df = business_df,
+                               keyphrases = keyphrases,
+                               keyphrase_popularity = keyphrase_popularity,
+                               keyphrase_selection_method = 'random',
+                               recommend_type = 'all'
+                               )
+    df.to_csv(single_step_with_avg_path+"random_all_50user.csv")
