@@ -1,0 +1,111 @@
+,user_id,target_item,item_name,iter,pre_rank,top_prediction_item_name,post_rank_random_all,post_rank_random_upper,post_rank_pop_all,post_rank_pop_upper,post_rank_diff_all,post_rank_diff_upper,critiqued_keyphrase_random,keyphrase_name_random,critiqued_keyphrase_pop,keyphrase_name_pop,critiqued_keyphrase_diff,keyphrase_name_diff,num_existing_keyphrases,pure_pruning_rank
+0,300,101,b'Cabin Fever',0,4830,b'Sansotei Ramen',,,,,[4830],[5839],,,,,53,tea,,4830
+1,300,101,b'Cabin Fever',1,4830,b'Sansotei Ramen',,,,,[4830],[5669],,,,,153,friendly,,4830
+2,300,101,b'Cabin Fever',2,4830,b'Sansotei Ramen',,,,,[4830],[6831],,,,,105,latte,,4830
+3,300,101,b'Cabin Fever',3,4830,b'Sansotei Ramen',,,,,[4830],[7062],,,,,155,refill,,4830
+4,300,101,b'Cabin Fever',4,4830,b'Sansotei Ramen',,,,,[4830],[6685],,,,,37,bread,,4830
+5,300,101,b'Cabin Fever',5,4830,b'Sansotei Ramen',,,,,[4830],[7064],,,,,159,crowded,,4830
+6,300,101,b'Cabin Fever',6,4830,b'Sansotei Ramen',,,,,[4830],[7002],,,,,174,cozy,,4830
+7,300,101,b'Cabin Fever',7,4830,b'Sansotei Ramen',,,,,[4830],[6478],,,,,136,store,,4830
+8,300,101,b'Cabin Fever',8,4830,b'Sansotei Ramen',,,,,[4830],[2551],,,,,67,croissant,,4830
+9,300,101,b'Cabin Fever',9,4830,b'Sansotei Ramen',,,,,[4830],[2554],,,,,138,nail,,4830
+10,300,886,b'Wok & Roast Chinese BBQ',0,3515,b'Sansotei Ramen',,,,,[3515],[498],,,,,27,bbq,,2442
+11,300,886,b'Wok & Roast Chinese BBQ',1,3515,b'Sansotei Ramen',,,,,[3515],[553],,,,,0,chinese,,2442
+12,300,886,b'Wok & Roast Chinese BBQ',2,3515,b'Sansotei Ramen',,,,,[3515],[1197],,,,,5,fried,,2442
+13,300,886,b'Wok & Roast Chinese BBQ',3,3515,b'Sansotei Ramen',,,,,[3515],[255],,,,,133,fried rice,,2442
+14,300,886,b'Wok & Roast Chinese BBQ',4,3515,b'Sansotei Ramen',,,,,[3515],[267],,,,,60,squid,,2442
+15,300,886,b'Wok & Roast Chinese BBQ',5,3515,b'Sansotei Ramen',,,,,[3515],[108],,,,,73,congee,,2442
+16,300,886,b'Wok & Roast Chinese BBQ',6,3515,b'Sansotei Ramen',,,,,[3515],[1173],,,,,52,beef,,2442
+17,300,886,b'Wok & Roast Chinese BBQ',7,3515,b'Sansotei Ramen',,,,,[3515],[540],,,,,198,crunchy,,2442
+18,300,886,b'Wok & Roast Chinese BBQ',8,3515,b'Sansotei Ramen',,,,,[3515],[2194],,,,,213,pot,,2442
+19,300,886,b'Wok & Roast Chinese BBQ',9,3515,b'Sansotei Ramen',,,,,[3515],[1041],,,,,35,crispy,,2442
+20,300,968,b'Porter Airlines',0,663,b'Sansotei Ramen',,,,,[663],[274],,,,,47,coffee,,625
+21,300,968,b'Porter Airlines',1,663,b'Sansotei Ramen',,,,,[663],[321],,,,,26,downtown,,625
+22,300,968,b'Porter Airlines',2,663,b'Sansotei Ramen',,,,,[663],[281],,,,,116,wine,,625
+23,300,968,b'Porter Airlines',3,663,b'Sansotei Ramen',,,,,[663],[510],,,,,87,tart,,625
+24,300,968,b'Porter Airlines',4,663,b'Sansotei Ramen',,,,,[663],[306],,,,,172,comfortable,,625
+25,300,968,b'Porter Airlines',5,663,b'Sansotei Ramen',,,,,[663],[575],,,,,185,wait,,625
+26,300,968,b'Porter Airlines',6,663,b'Sansotei Ramen',,,,,[663],[613],,,,,153,friendly,,625
+27,300,968,b'Porter Airlines',7,663,b'Sansotei Ramen',,,,,[663],[302],,,,,41,beer,,625
+28,300,968,b'Porter Airlines',8,663,b'Sansotei Ramen',,,,,[663],[365],,,,,167,pleasant,,625
+29,300,968,b'Porter Airlines',9,663,b'Sansotei Ramen',,,,,[663],[221],,,,,154,convenient,,625
+30,300,1620,b'Megabus',0,5096,b'Sansotei Ramen',,,,,[5096],[6855],,,,,172,comfortable,,2875
+31,300,1620,b'Megabus',1,5096,b'Sansotei Ramen',,,,,[5096],[6239],,,,,3,bar,,2875
+32,300,1620,b'Megabus',2,5096,b'Sansotei Ramen',,,,,[5096],[7047],,,,,162,immediately,,2875
+33,300,1620,b'Megabus',3,5096,b'Sansotei Ramen',,,,,[5096],[6243],,,,,150,clean,,2875
+34,300,1620,b'Megabus',4,5096,b'Sansotei Ramen',,,,,[5096],[6330],,,,,1,fast,,2875
+35,300,1620,b'Megabus',5,5096,b'Sansotei Ramen',,,,,[5096],[5938],,,,,213,pot,,2875
+36,300,1620,b'Megabus',6,5096,b'Sansotei Ramen',,,,,[5096],[5807],,,,,153,friendly,,2875
+37,300,1620,b'Megabus',7,5096,b'Sansotei Ramen',,,,,[5096],[2929],,,,,67,croissant,,2875
+38,300,1620,b'Megabus',8,5096,b'Sansotei Ramen',,,,,[5096],[2843],,,,,68,banana,,2875
+39,300,1620,b'Megabus',9,5096,b'Sansotei Ramen',,,,,[5096],[2912],,,,,128,milk tea,,2875
+40,300,1898,b'416 Snack Bar',0,20,b'Sansotei Ramen',,,,,[20],[18],,,,,3,bar,,19
+41,300,1898,b'416 Snack Bar',1,20,b'Sansotei Ramen',,,,,[20],[17],,,,,119,bun,,19
+42,300,1898,b'416 Snack Bar',2,20,b'Sansotei Ramen',,,,,[20],[20],,,,,87,tart,,19
+43,300,1898,b'416 Snack Bar',3,20,b'Sansotei Ramen',,,,,[20],[17],,,,,5,fried,,19
+44,300,1898,b'416 Snack Bar',4,20,b'Sansotei Ramen',,,,,[20],[10],,,,,127,fried chicken,,19
+45,300,1898,b'416 Snack Bar',5,20,b'Sansotei Ramen',,,,,[20],[5],,,,,100,oyster,,19
+46,300,1898,b'416 Snack Bar',6,20,b'Sansotei Ramen',,,,,[20],[10],,,,,123,steak,,19
+47,300,1898,b'416 Snack Bar',7,20,b'Sansotei Ramen',,,,,[20],[17],,,,,41,beer,,19
+48,300,1898,b'416 Snack Bar',8,20,b'Sansotei Ramen',,,,,[20],[20],,,,,148,mall,,19
+49,300,1898,b'416 Snack Bar',9,20,b'Sansotei Ramen',,,,,[20],[16],,,,,116,wine,,19
+50,300,2803,b'Harlem Underground',0,751,b'Sansotei Ramen',,,,,[751],[76],,,,,118,waffle,,711
+51,300,2803,b'Harlem Underground',1,751,b'Sansotei Ramen',,,,,[751],[485],,,,,56,chicken,,711
+52,300,2803,b'Harlem Underground',2,751,b'Sansotei Ramen',,,,,[751],[417],,,,,5,fried,,711
+53,300,2803,b'Harlem Underground',3,751,b'Sansotei Ramen',,,,,[751],[355],,,,,46,fish,,711
+54,300,2803,b'Harlem Underground',4,751,b'Sansotei Ramen',,,,,[751],[415],,,,,49,cheese,,711
+55,300,2803,b'Harlem Underground',5,751,b'Sansotei Ramen',,,,,[751],[178],,,,,31,brunch,,711
+56,300,2803,b'Harlem Underground',6,751,b'Sansotei Ramen',,,,,[751],[117],,,,,127,fried chicken,,711
+57,300,2803,b'Harlem Underground',7,751,b'Sansotei Ramen',,,,,[751],[375],,,,,37,bread,,711
+58,300,2803,b'Harlem Underground',8,751,b'Sansotei Ramen',,,,,[751],[572],,,,,3,bar,,711
+59,300,2803,b'Harlem Underground',9,751,b'Sansotei Ramen',,,,,[751],[118],,,,,107,pancake,,711
+60,300,3822,b'On The Rocks',0,4315,b'Sansotei Ramen',,,,,[4315],[7194],,,,,133,fried rice,,4315
+61,300,3822,b'On The Rocks',1,4315,b'Sansotei Ramen',,,,,[4315],[6949],,,,,41,beer,,4315
+62,300,3822,b'On The Rocks',2,4315,b'Sansotei Ramen',,,,,[4315],[6014],,,,,3,bar,,4315
+63,300,3822,b'On The Rocks',3,4315,b'Sansotei Ramen',,,,,[4315],[6906],,,,,0,chinese,,4315
+64,300,3822,b'On The Rocks',4,4315,b'Sansotei Ramen',,,,,[4315],[6344],,,,,120,wing,,4315
+65,300,3822,b'On The Rocks',5,4315,b'Sansotei Ramen',,,,,[4315],[6498],,,,,5,fried,,4315
+66,300,3822,b'On The Rocks',6,4315,b'Sansotei Ramen',,,,,[4315],[5904],,,,,97,toast,,4315
+67,300,3822,b'On The Rocks',7,4315,b'Sansotei Ramen',,,,,[4315],[5864],,,,,105,latte,,4315
+68,300,3822,b'On The Rocks',8,4315,b'Sansotei Ramen',,,,,[4315],[5946],,,,,104,sausage,,4315
+69,300,3822,b'On The Rocks',9,4315,b'Sansotei Ramen',,,,,[4315],[5829],,,,,103,fruit,,4315
+70,300,4025,b'Starbucks',0,4363,b'Sansotei Ramen',,,,,[4363],[7070],,,,,29,breakfast,,4363
+71,300,4025,b'Starbucks',1,4363,b'Sansotei Ramen',,,,,[4363],[7056],,,,,113,bacon,,4363
+72,300,4025,b'Starbucks',2,4363,b'Sansotei Ramen',,,,,[4363],[6804],,,,,42,sandwich,,4363
+73,300,4025,b'Starbucks',3,4363,b'Sansotei Ramen',,,,,[4363],[6787],,,,,215,sour,,4363
+74,300,4025,b'Starbucks',4,4363,b'Sansotei Ramen',,,,,[4363],[6346],,,,,117,rib,,4363
+75,300,4025,b'Starbucks',5,4363,b'Sansotei Ramen',,,,,[4363],[6584],,,,,95,corn,,4363
+76,300,4025,b'Starbucks',6,4363,b'Sansotei Ramen',,,,,[4363],[6111],,,,,151,busy,,4363
+77,300,4025,b'Starbucks',7,4363,b'Sansotei Ramen',,,,,[4363],[6141],,,,,1,fast,,4363
+78,300,4025,b'Starbucks',8,4363,b'Sansotei Ramen',,,,,[4363],[6164],,,,,8,lunch,,4363
+79,300,4025,b'Starbucks',9,4363,b'Sansotei Ramen',,,,,[4363],[5951],,,,,149,quick,,4363
+80,300,4906,b'Full Stop',0,491,b'Sansotei Ramen',,,,,[491],[250],,,,,105,latte,,423
+81,300,4906,b'Full Stop',1,491,b'Sansotei Ramen',,,,,[491],[218],,,,,47,coffee,,423
+82,300,4906,b'Full Stop',2,491,b'Sansotei Ramen',,,,,[491],[153],,,,,216,baked,,423
+83,300,4906,b'Full Stop',3,491,b'Sansotei Ramen',,,,,[491],[94],,,,,68,banana,,423
+84,300,4906,b'Full Stop',4,491,b'Sansotei Ramen',,,,,[491],[270],,,,,37,bread,,423
+85,300,4906,b'Full Stop',5,491,b'Sansotei Ramen',,,,,[491],[200],,,,,144,chair,,423
+86,300,4906,b'Full Stop',6,491,b'Sansotei Ramen',,,,,[491],[438],,,,,213,pot,,423
+87,300,4906,b'Full Stop',7,491,b'Sansotei Ramen',,,,,[491],[464],,,,,153,friendly,,423
+88,300,4906,b'Full Stop',8,491,b'Sansotei Ramen',,,,,[491],[202],,,,,42,sandwich,,423
+89,300,4906,b'Full Stop',9,491,b'Sansotei Ramen',,,,,[491],[120],,,,,29,breakfast,,423
+90,300,5041,b'Playa Cabana Cantina',0,82,b'Sansotei Ramen',,,,,[82],[18],,,,,32,taco,,80
+91,300,5041,b'Playa Cabana Cantina',1,82,b'Sansotei Ramen',,,,,[82],[5],,,,,12,mexican,,80
+92,300,5041,b'Playa Cabana Cantina',2,82,b'Sansotei Ramen',,,,,[82],[59],,,,,46,fish,,80
+93,300,5041,b'Playa Cabana Cantina',3,82,b'Sansotei Ramen',,,,,[82],[42],,,,,182,chip,,80
+94,300,5041,b'Playa Cabana Cantina',4,82,b'Sansotei Ramen',,,,,[82],[45],,,,,58,cocktail,,80
+95,300,5041,b'Playa Cabana Cantina',5,82,b'Sansotei Ramen',,,,,[82],[60],,,,,52,beef,,80
+96,300,5041,b'Playa Cabana Cantina',6,82,b'Sansotei Ramen',,,,,[82],[76],,,,,151,busy,,80
+97,300,5041,b'Playa Cabana Cantina',7,82,b'Sansotei Ramen',,,,,[82],[38],,,,,123,steak,,80
+98,300,5041,b'Playa Cabana Cantina',8,82,b'Sansotei Ramen',,,,,[82],[79],,,,,87,tart,,80
+99,300,5041,b'Playa Cabana Cantina',9,82,b'Sansotei Ramen',,,,,[82],[75],,,,,117,rib,,80
+100,300,5098,b'Bar Hop',0,111,b'Sansotei Ramen',,,,,[111],[76],,,,,41,beer,,110
+101,300,5098,b'Bar Hop',1,111,b'Sansotei Ramen',,,,,[111],[101],,,,,3,bar,,110
+102,300,5098,b'Bar Hop',2,111,b'Sansotei Ramen',,,,,[111],[33],,,,,100,oyster,,110
+103,300,5098,b'Bar Hop',3,111,b'Sansotei Ramen',,,,,[111],[102],,,,,151,busy,,110
+104,300,5098,b'Bar Hop',4,111,b'Sansotei Ramen',,,,,[111],[53],,,,,48,burger,,110
+105,300,5098,b'Bar Hop',5,111,b'Sansotei Ramen',,,,,[111],[65],,,,,4,fry,,110
+106,300,5098,b'Bar Hop',6,111,b'Sansotei Ramen',,,,,[111],[37],,,,,17,pub,,110
+107,300,5098,b'Bar Hop',7,111,b'Sansotei Ramen',,,,,[111],[77],,,,,37,bread,,110
+108,300,5098,b'Bar Hop',8,111,b'Sansotei Ramen',,,,,[111],[68],,,,,173,dark,,110
+109,300,5098,b'Bar Hop',9,111,b'Sansotei Ramen',,,,,[111],[111],,,,,213,pot,,110
