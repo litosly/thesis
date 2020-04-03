@@ -6,7 +6,7 @@ import pandas as pd
 
 
 def critiquing(matrix_Train, matrix_Test, keyphrase_freq, dataset_name, model,
-               parameters_row, critiquing_model_name, item_keyphrase_freq=None, num_users_sampled=10,
+               parameters_row, critiquing_model_name, lamb, keyphrases_names, keyphrase_selection_method, item_keyphrase_freq=None, num_users_sampled=10,
                num_items_sampled=5, max_iteration_threshold=20):
 
     num_users = matrix_Train.shape[0]
@@ -20,17 +20,17 @@ def critiquing(matrix_Train, matrix_Test, keyphrase_freq, dataset_name, model,
 
     row = {}
 
-    # target_ranks = [1, 5, 10]
-    target_ranks = [20,50]
+    target_ranks = [1] # First get topk = 1, then extract other metrics
+    # target_ranks = [20,50]
 
     # Randomly select test users
     test_users = sample_users(num_users, num_users_sampled)
     # Test fixed users
     test_users = [1]
-    lamb = [5,5]
-    keyphrase_selection_method = "diff"
+    
+    # keyphrase_selection_method = "diff"
     max_wanted_keyphrase = 20
-    keyphrases_names = pd.read_csv('../data/yelp/KeyPhrases.csv')['Phrases'].tolist()
+    # keyphrases_names = pd.read_csv('../data/yelp/KeyPhrases.csv')['Phrases'].tolist()
     
     critiquing_model = critiquing_models[critiquing_model_name](keyphrase_freq=keyphrase_freq,
                                                                 item_keyphrase_freq=item_keyphrase_freq,

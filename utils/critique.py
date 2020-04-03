@@ -267,3 +267,101 @@ def lpranksvm2(initial_prediction_u, keyphrase_freq, affected_items, unaffected_
     new_prediction = thetas[0]*initial_prediction_u/num_critiques + critique_score.flatten()
     
     return new_prediction, thetas
+
+
+def lpranksvm3(initial_prediction_u, keyphrase_freq, affected_items, unaffected_items, num_keyphrases, 
+            query, test_user, item_latent, reg, user_latent_embedding, item_keyphrase_freq, Y, lamb = [5,5]):
+    critiques = query # fix this variable name later
+
+    # pre calculate some value
+    num_critiques = len(critiques)
+
+    num_affected_items = len(affected_items)
+    num_unaffected_items = len(unaffected_items)
+
+#     start_time = time.time()
+
+    # Model
+    m = Model("LP2RankSVM3")
+    m.setParam('OutputFlag', 0) # set to 1 for outputing details
+    
+    # Assignment variables
+    thetas = []
+    us = []
+    xi_pos = []
+    xi_neg = []
+    # weight thetas
+    for k in range(num_critiques + 1):
+        thetas.append(m.addVar(lb=-2,
+                              ub=2,
+                              vtype=GRB.CONTINUOUS,
+                              name="theta%d" % k))
+    thetas = np.array(thetas)
+    
+    # dummy variable u for absolute theta
+    for k in range(num_critiques + 1):
+        us.append(m.addVar(vtype=GRB.CONTINUOUS,
+                          name="u%d" % k))
+        
+    # slack variables xi
+    for i in range(num_affected_items):
+        xi_pos.append(m.addVar(lb = 0, 
+                                vtype = GRB.CONTINUOUS,
+                                name = "xi_pos%d" % i ))
+    for i in range(num_unaffected_items):
+        xi_neg.append(m.addVar(lb = 0, 
+                                vtype = GRB.CONTINUOUS,
+                                name = "xi_neg%d" % i ))
+        
+    ## constraints
+    # constraints for dummy variable u's
+    for k in range(num_critiques+1):
+        m.addConstr(us[k] >= thetas[k] - 1)
+        m.addConstr(us[k] >= 1 - thetas[k])
+ 
+    user_latent_embedding = np.array(user_latent_embedding)
+    
+    # Affected items rank higher
+    for j in range(num_affected_items):
+        m.addConstr( thetas.dot(user_latent_embedding.dot(item_latent[affected_items[j]])) >= initial_prediction_u[affected_items[j]] + 1 - xi_pos[j], name = "pos_constraint%d" % j )
+    
+    # Unaffected items rank lower
+    for j in range(num_unaffected_items):
+        m.addConstr( initial_prediction_u[unaffected_items[j]] - thetas.dot(user_latent_embedding.dot(item_latent[unaffected_items[j]])) >=  1 - xi_neg[j], name = "neg_constraint%d" % j )
+            
+    # objective
+    if type(lamb) != list:
+        m.setObjective(quicksum(us) + lamb * (quicksum(xi_pos)+quicksum(xi_neg)), GRB.MINIMIZE)  # Single regularization
+    else:
+        lamb1 = lamb[0] #regularization for trading-off margin size against training error
+        lamb2 = lamb[1] #regularization for trading-off deviation from Averaging 
+        m.setObjective(lamb1* quicksum(us) + lamb2 * (quicksum(xi_pos)+quicksum(xi_neg)), GRB.MINIMIZE) # double regularization
+    
+                
+    # Optimize
+    m.optimize()
+
+    # Save optimal thetas
+    thetas = []
+    for k in range(num_critiques+1):
+        optimal_theta = m.getVarByName("theta%d" % k).X
+        thetas.append(optimal_theta)
+        
+    critiqued_vector = np.zeros(keyphrase_freq.shape[1])
+    
+    # Combine weights to critiqued vector
+    for c in critiques:
+#         critiqued_vector[c] = 1 # set critiqued/boosted keyphrase to 1
+        critiqued_vector[c] = max(keyphrase_freq[test_user , c],1)
+    
+    for k in range(num_critiques):
+        critiqued_vector[critiques[k]] *= thetas[k+1]
+    
+    # Get rating score
+    critique_score = predict_scores(matrix_U=reg.predict(critiqued_vector.reshape(1, -1)),
+                                    matrix_V=item_latent)
+    new_prediction = thetas[0]*initial_prediction_u/num_critiques + critique_score.flatten()
+#     new_prediction = initial_prediction_u/num_critiques + critique_score.flatten()
+#     new_prediction = critique_score.flatten()
+    
+    return new_prediction, thetas

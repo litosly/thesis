@@ -1,6 +1,6 @@
 from experiment.critiquing import critiquing
 from utils.argcheck import check_int_positive
-from utils.io import load_numpy, load_yaml, save_dataframe_csv, find_best_hyperparameters
+from utils.io import load_numpy, load_yaml, load_dataframe_csv, save_dataframe_csv, find_best_hyperparameters
 from utils.modelname import models
 from utils.progress import WorkSplitter
 
@@ -40,6 +40,8 @@ def main(args):
         'rank' : 200 
     }
     
+    keyphrases_names = load_dataframe_csv(path = args.data_dir, name = "Keyphrases.csv")['Phrases'].tolist()
+    
     results = critiquing(matrix_Train=R_train,
                          matrix_Test=R_test,
                          keyphrase_freq=R_train_keyphrase,
@@ -50,7 +52,9 @@ def main(args):
                          dataset_name=args.dataset_name,
                          model=models[args.model],
                          parameters_row=parameters_row,
-                         critiquing_model_name=args.critiquing_model_name)
+                         critiquing_model_name=args.critiquing_model_name,
+                         lamb = args.lambdas,
+                         keyphrases_names = keyphrases_names)
 
     table_path = load_yaml('config/global.yml', key='path')['tables']
     save_dataframe_csv(results, table_path, args.save_path)
@@ -99,6 +103,8 @@ if __name__ == "__main__":
     parser.add_argument('--train_item_keyphrase', dest='train_item_keyphrase_set', default="I_K.npz",
                         help='Train item keyphrase sparse matrix. (default: %(default)s)')
 
+    parser.add_argument('--lambdas', dest='lambdas', default= [1, 1],
+                        help='Lambdas for RankSVM. (default: %(default)s)')
 
     args = parser.parse_args()
 
