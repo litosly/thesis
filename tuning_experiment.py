@@ -95,10 +95,10 @@ if __name__ == "__main__":
                         type=check_int_positive,
                         help='Number of users sampled in critiquing. (default: %(default)s)')
     
-    parser.add_argument('--test', dest='test_set', default="rtest.npz",
+    parser.add_argument('--test', dest='test_set', default="Rtest.npz",
                         help='Test set sparse matrix. (default: %(default)s)')
 
-    parser.add_argument('--train', dest='train_set', default="rtrain.npz",
+    parser.add_argument('--train', dest='train_set', default="Rtrain.npz",
                         help='Train set sparse matrix. (default: %(default)s)')
 
     parser.add_argument('--train_keyphrase', dest='train_keyphrase_set', default="U_K.npz",
