@@ -183,7 +183,7 @@ class RankSVM2(object):
 
 
     def get_initial_predictions(self):
-        self.business_df = get_business_df()
+        # self.business_df = get_business_df()
         self.Y, RQt , Bias = self.model(self.matrix_Train,
                                        iteration=self.parameters_row['iter'],
                                        lamb=self.parameters_row['lambda'],

@@ -59,7 +59,7 @@ def get_keyphrase_popularity(df,keyphrases):
     return keyphrase_popularity
 
 # Utility function for getting restaurant info from ItemIndex
-def get_business_df(path = "../data/yelp/business.json" ):
+def get_business_df(path = None ):
     with open(path,encoding="utf8") as json_file:
         data = json_file.readlines()
         data = list(map(json.loads, data))
