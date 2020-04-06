@@ -54,7 +54,8 @@ def main(args):
                          parameters_row=parameters_row,
                          critiquing_model_name=args.critiquing_model_name,
                          lamb = args.lambdas,
-                         keyphrases_names = keyphrases_names)
+                         keyphrases_names = keyphrases_names,
+                         keyphrase_selection_method = args.keyphrase_selection_method)
 
     table_path = load_yaml('config/global.yml', key='path')['tables']
     save_dataframe_csv(results, table_path, args.save_path)
@@ -64,13 +65,13 @@ if __name__ == "__main__":
     # Commandline arguments
     parser = argparse.ArgumentParser(description="Latent Linear Critiquing")
 
-    parser.add_argument('--critiquing_model_name', dest='critiquing_model_name', default="ranksvm2",
+    parser.add_argument('--critiquing_model_name', dest='critiquing_model_name', default="ranksvm3",
                         help='Critiquing model. (default: %(default)s)')
 
     parser.add_argument('--data_dir', dest='data_dir', default="../data/yelp/",
                         help='Directory path to the dataset. (default: %(default)s)')
 
-    parser.add_argument('--dataset_name', dest='dataset_name', default="yelp/",
+    parser.add_argument('--dataset_name', dest='dataset_name', default="yelp",
                         help='Dataset name. (default: %(default)s)')
 
     parser.add_argument('--model', dest='model', default="PLRec",
@@ -87,14 +88,14 @@ if __name__ == "__main__":
                         type=check_int_positive,
                         help='Number of items sampled for each user in critiquing. (default: %(default)s)')
 
-    parser.add_argument('--num_users_sampled', dest='num_users_sampled', default=10,
+    parser.add_argument('--num_users_sampled', dest='num_users_sampled', default=25,
                         type=check_int_positive,
                         help='Number of users sampled in critiquing. (default: %(default)s)')
 
-    parser.add_argument('--test', dest='test_set', default="rtest.npz",
+    parser.add_argument('--test', dest='test_set', default="Rtest.npz",
                         help='Test set sparse matrix. (default: %(default)s)')
 
-    parser.add_argument('--train', dest='train_set', default="rtrain.npz",
+    parser.add_argument('--train', dest='train_set', default="Rtrain.npz",
                         help='Train set sparse matrix. (default: %(default)s)')
 
     parser.add_argument('--train_keyphrase', dest='train_keyphrase_set', default="U_K.npz",
@@ -105,6 +106,9 @@ if __name__ == "__main__":
 
     parser.add_argument('--lambdas', dest='lambdas', default= [1, 1],
                         help='Lambdas for RankSVM. (default: %(default)s)')
+    
+    parser.add_argument('--keyphrase_selection_method', dest='keyphrase_selection_method', default="random",
+                        help='keyphrase_selection_method. (default: %(default)s)')
 
     args = parser.parse_args()
 

@@ -77,6 +77,57 @@ def lpaverage(initial_prediction_u, keyphrase_freq, affected_items, unaffected_i
     return new_prediction, lambdas   
 
 
+def LP1SimplifiedOptimize(initial_prediction_u, keyphrase_freq, affected_items, unaffected_items, num_keyphrases, query, test_user, item_latent, reg):
+
+    critiqued_vector = np.zeros(keyphrase_freq[0].shape)
+
+    for q in query:
+        # critiqued_vector[q] = -keyphrase_freq[test_user][q]
+        critiqued_vector[q] = max(keyphrase_freq[test_user][q],1)
+
+    num_critiques = len(query)
+
+    W2 = reg.coef_
+    W = item_latent.dot(W2)
+
+    num_affected_items = len(affected_items)
+    num_unaffected_items = len(unaffected_items)
+
+    # start_time = time.time()
+
+    # Model
+    m = Model("LP1Simplified")
+    m.setParam('OutputFlag', 0)
+    # Assignment variables
+    lambs = []
+
+    for k in range(num_critiques):
+        lambs.append(m.addVar(lb=-1,
+                              ub=1,
+                              vtype=GRB.CONTINUOUS,
+                              name="lamb%d" % query[k]))
+
+    m.setObjective(quicksum(initial_prediction_u[affected_item] * num_unaffected_items + quicksum(lambs[k] * critiqued_vector[query[k]] * W[affected_item][query[k]] * num_unaffected_items for k in range(num_critiques)) for affected_item in affected_items) - quicksum(initial_prediction_u[unaffected_item] * num_affected_items + quicksum(lambs[k] * critiqued_vector[query[k]] * W[unaffected_item][query[k]] * num_affected_items for k in range(num_critiques)) for unaffected_item in unaffected_items), GRB.MAXIMIZE)
+
+    # Optimize
+    m.optimize()
+
+    # print("Elapsed: {}".format(inhour(time.time() - start_time)))
+
+    lambdas = []
+    for k in range(num_critiques):
+        optimal_lambda = m.getVars()[k].X
+        lambdas.append(optimal_lambda)
+        critiqued_vector[query[k]] *= optimal_lambda
+
+    critique_score = predict_scores(matrix_U=reg.predict(critiqued_vector.reshape(1, -1)),
+                                    matrix_V=item_latent)
+
+    new_prediction = initial_prediction_u + critique_score.flatten()
+
+    return new_prediction, lambdas
+
+
 
 def lpranksvm1(initial_prediction_u, keyphrase_freq, affected_items, unaffected_items, num_keyphrases, 
             query, test_user, item_latent, reg, user_latent_embedding, item_keyphrase_freq, Y):

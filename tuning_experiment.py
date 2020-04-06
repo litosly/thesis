@@ -42,8 +42,8 @@ def main(args):
     
     keyphrases_names = load_dataframe_csv(path = args.data_dir, name = "KeyPhrases.csv")['Phrases'].tolist()
     keyphrase_selection_method = args.keyphrase_selection_method
-    # lambs = [0.0001, 0.001, 0.01, 0.05, 0.1, 0.5, 1, 5, 10, 30, 50, 70, 90, 100, 200, 500, 1000, 10000, 100000]
-    lambs = [1,10]
+    lambs = [0.0001, 0.001, 0.01, 0.05, 0.1, 0.5, 1, 5, 10, 30, 50, 70, 90, 100, 200, 500, 1000, 10000, 100000]
+    # lambs = [1,10]
     for lamb in lambs:
         results = critiquing(matrix_Train=R_train,
                             matrix_Test=R_test,
@@ -62,6 +62,7 @@ def main(args):
 
         table_path = load_yaml('config/global.yml', key='path')['tables']
         save_dataframe_csv(results, table_path, args.save_path + "tuning_" + args.dataset_name +"_at_lamb_" + str(lamb) + "_with_" + keyphrase_selection_method + ".csv" )
+        
 
 
 if __name__ == "__main__":

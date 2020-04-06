@@ -24,13 +24,16 @@ def critiquing(matrix_Train, matrix_Test, keyphrase_freq, dataset_name, model,
     # target_ranks = [20,50]
 
     # Randomly select test users
-    test_users = sample_users(num_users, num_users_sampled)
+    # test_users = sample_users(num_users, num_users_sampled)
     # Test fixed users
-    test_users = [1]
+    # test_users = [1]
+    test_users = np.arange(50)
     
     # keyphrase_selection_method = "diff"
     max_wanted_keyphrase = 20
     # keyphrases_names = pd.read_csv('../data/yelp/KeyPhrases.csv')['Phrases'].tolist()
+    
+    print ("critiquing_model_name", critiquing_model_name)
     
     critiquing_model = critiquing_models[critiquing_model_name](keyphrase_freq=keyphrase_freq,
                                                                 item_keyphrase_freq=item_keyphrase_freq,

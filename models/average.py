@@ -1,8 +1,10 @@
 from prediction.predictor import predict_scores, predict_vector
 from sklearn.linear_model import LinearRegression
 from utils.critique import lpaverage
+from sklearn.preprocessing import normalize
 from utils.keyphrase_selection import *
 import copy
+import random
 
 import numpy as np
 
@@ -10,7 +12,7 @@ class average(object):
     def __init__(self, keyphrase_freq, item_keyphrase_freq, row, matrix_Train, matrix_Test, test_users,
                  target_ranks, num_items_sampled, num_keyphrases, df,
                  max_iteration_threshold, keyphrase_popularity, dataset_name,
-                 model, parameters_row, keyphrases_names, keyphrase_selection_method, max_wanted_keyphrase, **unused):
+                 model, parameters_row, keyphrases_names, keyphrase_selection_method, max_wanted_keyphrase, lamb, **unused):
         self.keyphrase_freq = keyphrase_freq
         self.item_keyphrase_freq = item_keyphrase_freq
         self.row = row
@@ -29,15 +31,14 @@ class average(object):
         self.parameters_row = parameters_row
         self.keyphrase_selection_method = keyphrase_selection_method
         self.max_wanted_keyphrase = max_wanted_keyphrase
-        
-        
+        self.lamb = lamb #not used 
         self.keyphrases_names = keyphrases_names
 
     def start_critiquing(self):
         self.get_initial_predictions() 
 
-        for user in tqdm(self.test_users):
-            start_time = time.time()
+        for user in self.test_users:
+            # start_time = time.time()
             
             # User id starts from 0
             self.row['user_id'] = user
@@ -71,7 +72,8 @@ class average(object):
                     
                     if self.keyphrase_selection_method == "random" or self.keyphrase_selection_method == "pop":
                         # Get the item's existing keyphrases (we can boost)
-                        remaining_keyphrases = self.item_keyphrase_freq[item].nonzero()[1]
+                        # print ('item_keyphrase_freq', self.item_keyphrase_freq[item].nonzero())
+                        remaining_keyphrases = self.item_keyphrase_freq[item].nonzero()[0]
                         
                     if self.keyphrase_selection_method == "diff":
                         # For keyphrase selection method 'diff' 
@@ -93,7 +95,7 @@ class average(object):
                     affected_items = np.array([])
                     
                     # Set up latent embedding
-                    user_latent_embedding = [Y[user]]
+                    user_latent_embedding = [self.Y[user]]
                     
                     for iteration in range(self.max_iteration_threshold):
                         self.row['iteration'] = iteration + 1            
@@ -109,7 +111,7 @@ class average(object):
                             critiqued_keyphrase = remaining_keyphrases[0]
                         
                         self.row['critiqued_keyphrase'] = critiqued_keyphrase
-                        self.row['critiqued_keyphrase_name'] = keyphrases_names[critiqued_keyphrase]
+                        self.row['critiqued_keyphrase_name'] = self.keyphrases_names[critiqued_keyphrase]
                         query.append(critiqued_keyphrase)
 
                         # Get affected items (items have critiqued keyphrase)
@@ -130,13 +132,13 @@ class average(object):
                         critiqued_vector[critiqued_keyphrase] = max(self.keyphrase_freq[user , critiqued_keyphrase],1)
                         
                         # map user critique to user latent embedding
-                        k_ci = reg.predict(critiqued_vector.reshape(1, -1)).flatten()
+                        k_ci = self.reg.predict(critiqued_vector.reshape(1, -1)).flatten()
                         user_latent_embedding.append(k_ci)
                         
-                        prediction_scores_u, lambdas = average(initial_prediction_u=self.prediction_scores[user],
+                        prediction_scores_u, lambdas = lpaverage(initial_prediction_u=self.prediction_scores[user],
                                                                              keyphrase_freq=copy.deepcopy(self.keyphrase_freq),
-                                                                             affected_items=np.intersect1d(affected_items, prediction_items[affected_items_index_rank[0][:20]]),
-                                                                             unaffected_items=np.intersect1d(unaffected_items, prediction_items[unaffected_items_index_rank[0][:20]]),
+                                                                             affected_items=np.intersect1d(affected_items, prediction_items[affected_items_index_rank[0][:100]]),
+                                                                             unaffected_items=np.intersect1d(unaffected_items, prediction_items[unaffected_items_index_rank[0][:100]]),
                                                                              num_keyphrases=self.num_keyphrases,
                                                                              query=query,
                                                                              test_user=user,
@@ -171,20 +173,19 @@ class average(object):
                                 self.df = self.df.append(self.row, ignore_index=True)
                                 break
         
-            print("User", user ,"Elapsed: {}".format(inhour(time.time() - start_time)))
+            # print("User", user ,"Elapsed: {}".format(inhour(time.time() - start_time)))
         return self.df
 
-
     def get_initial_predictions(self):
-        self.RQ, Yt, Bias = self.model(self.matrix_Train,
+        # self.business_df = get_business_df()
+        self.Y, RQt , Bias = self.model(self.matrix_Train,
                                        iteration=self.parameters_row['iter'],
                                        lamb=self.parameters_row['lambda'],
                                        rank=self.parameters_row['rank'])
-        self.Y = Yt.T
-
-        self.reg = LinearRegression().fit(self.keyphrase_freq, self.RQ)
+        
+        self.RQ = RQt.T
+        self.reg = LinearRegression().fit(normalize(self.keyphrase_freq), self.Y)
 
         self.prediction_scores = predict_scores(matrix_U=self.RQ,
                                                 matrix_V=self.Y,
-                                                bias=Bias)
-
+                                                bias=Bias).T
