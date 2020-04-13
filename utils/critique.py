@@ -48,7 +48,7 @@ def lpaverage(initial_prediction_u, keyphrase_freq, affected_items, unaffected_i
     critiqued_vector = np.zeros(keyphrase_freq.shape[1])
     
     for q in query:
-        critiqued_vector[q] = 1
+        critiqued_vector[q] = max(keyphrase_freq[test_user][q],1)
 #         critiqued_vector[q] = keyphrase_freq[test_user,q]
         
     num_critiques = len(query)

@@ -45,7 +45,7 @@ def main(args):
     results = critiquing(matrix_Train=R_train,
                          matrix_Test=R_test,
                          keyphrase_freq=R_train_keyphrase,
-                         item_keyphrase_freq=R_train_item_keyphrase,
+                         item_keyphrase_freq=R_train_item_keyphrase.T,
                          num_users_sampled=args.num_users_sampled,
                          num_items_sampled=args.num_items_sampled,
                          max_iteration_threshold=args.max_iteration_threshold,

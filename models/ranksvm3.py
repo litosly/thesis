@@ -143,8 +143,8 @@ class RankSVM3(object):
                         
                         prediction_scores_u, thetas = lpranksvm3(initial_prediction_u=self.prediction_scores[user],
                                                                              keyphrase_freq=copy.deepcopy(self.keyphrase_freq),
-                                                                             affected_items=np.intersect1d(affected_items, prediction_items[affected_items_index_rank[0][:100]]),
-                                                                             unaffected_items=np.intersect1d(unaffected_items, prediction_items[unaffected_items_index_rank[0][:100]]),
+                                                                             affected_items=np.intersect1d(affected_items, prediction_items[affected_items_index_rank[0][:20]]),
+                                                                             unaffected_items=np.intersect1d(unaffected_items, prediction_items[unaffected_items_index_rank[0][:20]]),
                                                                              num_keyphrases=self.num_keyphrases,
                                                                              query=query,
                                                                              test_user=user,
